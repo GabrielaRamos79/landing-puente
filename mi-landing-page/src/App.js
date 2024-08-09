@@ -1,36 +1,54 @@
+import React from 'react';
 import './App.css';
 import logo from './images/ff2e987dbc2df60b444c012e41913400.gif'
+import puente from './images/logo.png'
+import ouh-yeah from './images/ouh-yeah.png'
+import que-hacemos from './images/que-hacemos.png'
 import 'bootstrap/dist/css/bootstrap.min.css'
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <h1>Somos el puente</h1>
-        <img src={logo} className="App-logo" alt="logo" />
-        <h2>
-          tu agencia<br>
-          </br>de publicidad<br>
-          </br> y comunicación 360º
-        </h2>
-        <p>
-          Hacemos las cosas diferentes desde el otro lado<br>
-          </br>del branding: publicidad, branded content, diseño<br>
-          </br>y estrategia, ¡con un <b>punch de flow creativo</b>!<br>
-          </br>
-        </p>
-          <p>Si quieres revolucionar tu marca y llevarla hasta el<br></br>éxito, es el momento de cruzar al otro lado.<br>
-          </br></p>
-          <p>¿Quieres saber qué podemos hacer por ti?
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Escríbenos
-        </a>
+    <div className="container my-5">
+      <header className="App-header text-center">
+        <div className='row'>
+          <div className='col-md-6 text-start'>
+            <h1 className='highlight-text mb-4'>
+              <span className='rayo'></span>
+              Somos
+              <img src={puente} className='puente-logo mb-2' alt='puente-logo' />
+            </h1>
+          </div>
+          <div className='col-md-6 d-flex justify-content-center align-items-center'>
+            <img src={logo} className="App-logo my-5" alt="logo" />
+          </div>
+        </div>
+        <div className='row mt-5'>
+          <div className='col-md-12 d-flex justify-content-end align-items-start'>
+            <h2 className='fw-bold'>
+              tu agencia<br />
+              de publicidad<br />
+              y comunicación 360º
+            </h2>
+          </div>
+        </div>
+        <div className="row mt-4">
+          <div className="col-md-8 text-start d-flex flex-column justify-content-center">
+            <p>
+              Hacemos las cosas diferentes desde el otro lado<br />
+              del branding: publicidad, branded content, diseño<br />
+              y estrategia, ¡con un <b>punch de flow creativo</b>!<br />
+            </p>
+            <p>Si quieres revolucionar tu marca y llevarla hasta el<br></br>éxito, es el momento de cruzar al otro lado.<br />
+            </p>
+            <p>¿Quieres saber qué podemos hacer por ti?
+            </p>
+            <div className="col-md-4 d-flex align-items-center justify-content-end"></div>
+              <a className="App-link btn-primary btn-lg" href="https://elpuentepublicidad.com" target="_blank" rel="noopener noreferrer">
+                ESCRÍBENOS
+              </a>
+          </div>
+        </div>
+        <img src={ouh-yeah} className='ouh-yeah mb-2' alt='ouh-yeah' />
       </header>
     </div>
   );

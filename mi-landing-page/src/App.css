@@ -55,20 +55,88 @@
   src: url('./fonts/Inter_18pt-SemiBold.ttf') format('truetype');
 }
 
-.App {
+/* .container {
   text-align: center;
-}
+} */
 
 .App-logo {
-  height: 40vmin;
-  pointer-events: none;
+  width: 100%;
+  max-width: 300px;
+  margin-top: 200px;
+  margin-bottom: 20px;
+  /* height: 40vmin;
+  pointer-events: none; */
 }
 
-@media (prefers-reduced-motion: no-preference) {
+.highlight-text {
+  font-family: 'Inter_18pt-ExtraLight', sans-serif;
+  /* margin-right: 15px;
+  margin-top: 50px; */
+  position: relative;
+  display: inline-block;
+}
+
+.rayo {
+  position: absolute;
+  top: 34px;
+  left: -20px;
+  width: 8px;
+  height: 25px;
+  background-color: #061599;
+  border-radius: 50%;
+  transform: rotate(70deg);
+}
+
+.highlight-text::before {
+  content: '';
+  position: absolute;
+  top: 20px;
+  left: -24px;
+  width: 8px;
+  height: 25px;
+  background-color: #061599;
+  border-radius: 50%;
+  /* margin-right: 15px; */
+  transform: rotate(110deg); /* Ajusta el ángulo según sea necesario */
+}
+
+/* Pseudo-elemento para el segundo "rayo" */
+.highlight-text::after {
+  content: '';
+  position: absolute;
+  top: 5px;
+  left: -20px;
+  width: 8px;
+  height: 25px;
+  background-color: #061599;
+  border-radius: 50%;
+  transform: rotate(140deg); /* Ajusta el ángulo */
+}
+
+/* Elemento base */
+/* .highlight-text span {
+  position: absolute;
+  top: 15px;
+  left: 50px;
+  width: 8px;
+  height: 25px;
+  background-color: blue;
+  border-radius: 50%;
+  transform: rotate(0deg); 
+} */
+
+.puente-logo {
+  height: 60px; /* Tamaño del logo de "puente" */
+  vertical-align:middle;
+  margin-top: 10px;
+  margin-left: 15px;
+}
+
+/* @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
   }
-}
+} */
 
 .App-header {
   background-color: #e9eaf0;
@@ -83,22 +151,35 @@
 
 .App-header h1{
   font-family: 'Inter_18pt-ExtraLight', sans-serif;
-  align-self: flex-start;
+  font-size: 2.5rem;
+  /* align-self: flex-start; */
 }
 
 .App-header h2{
   font-family: 'Inter_18pt-ExtraLight', sans-serif;
+  font-size: 2rem;
+  margin-top: 20px;
   align-self: flex-end;
   text-align: right;
 }
 
 .App-header p{
   font-family: 'Agharti', sans-serif;
-  align-self: flex-start;
-  text-align: left;
+  font-size: 1rem;
+  /* align-self: flex-start; */
+  /* text-align: left; */
 }
 .App-link {
-  color: #61dafb;
+  background-color: #c9ea50;
+  color: #161719;
+  font-family: 'AghartiVF', sans-serif;
+  font-size: 50px;
+  font-weight:lighter;
+  box-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+  text-decoration:none;
+  align-self:flex-end;
+  letter-spacing: -0.5px;
+  transform: scaleY(1.2);
 }
 
 @keyframes App-logo-spin {
