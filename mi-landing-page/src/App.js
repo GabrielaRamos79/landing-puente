@@ -2,8 +2,8 @@ import React from 'react';
 import './App.css';
 import logo from './images/ff2e987dbc2df60b444c012e41913400.gif'
 import puente from './images/logo.png'
-import ouh-yeah from './images/ouh-yeah.png'
-import que-hacemos from './images/que-hacemos.png'
+import './images/ouh-yeah.png'
+import './images/que-hacemos.png'
 import 'bootstrap/dist/css/bootstrap.min.css'
 
 function App() {
@@ -48,7 +48,8 @@ function App() {
               </a>
           </div>
         </div>
-        <img src={ouh-yeah} className='ouh-yeah mb-2' alt='ouh-yeah' />
+        <img src='./images/ouh-yeah.png' className='ouh-yeah mb-2' alt='ouh-yeah' />
+        <img src='./images/que-hacemos.png' className='que-hacemos mb-2' alt='que-hacemos' />
       </header>
     </div>
   );
