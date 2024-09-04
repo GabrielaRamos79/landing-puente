@@ -4,6 +4,7 @@ import logo from './images/ff2e987dbc2df60b444c012e41913400.gif'
 import puente from './images/logo.png'
 import './images/yeah.png'
 import './images/hacemos.png'
+import './images/falsa.jpg'
 import 'bootstrap/dist/css/bootstrap.min.css'
 
 function App() {
@@ -48,7 +49,7 @@ function App() {
               </a>
           </div>
         </div>
-        <img src='./images/yeah.png' className='ouh-yeah mb-2' alt='ouh-yeah' />
+        <img src='./images/falsa.jpg' className='ouh-yeah mb-2' alt='ouh-yeah' />
         <img src='./images/que-hacemos.png' className='que-hacemos mb-2' alt='que-hacemos' />
       </header>
     </div>
