@@ -1,9 +1,9 @@
 import React from 'react';
 import './App.css';
-import logo from './images/ff2e987dbc2df60b444c012e41913400.gif'
+import logo from './images/gif2.png'
 import puente from './images/logo.png'
 import yeah from './images/yeah.png'
-import hacemos from './images/hacemos.png'
+import hacemos from './images/gif 2.png'
 // import falsa from './images/falsa.jpg'
 import 'bootstrap/dist/css/bootstrap.min.css'
 
