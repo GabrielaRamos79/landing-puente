@@ -2,9 +2,9 @@ import React from 'react';
 import './App.css';
 import logo from './images/ff2e987dbc2df60b444c012e41913400.gif'
 import puente from './images/logo.png'
-import './images/yeah.png'
-import './images/hacemos.png'
-import './images/falsa.jpg'
+import yeah from './images/yeah.png'
+import hacemos from './images/hacemos.png'
+// import falsa from './images/falsa.jpg'
 import 'bootstrap/dist/css/bootstrap.min.css'
 
 function App() {
@@ -43,14 +43,14 @@ function App() {
             </p>
             <p>¿Quieres saber qué podemos hacer por ti?
             </p>
-            <div className="col-md-4 d-flex align-items-center justify-content-end"></div>
-              <a className="App-link btn-primary btn-lg" href="https://elpuentepublicidad.com" target="_blank" rel="noopener noreferrer">
+            <div className="col-md-4 d-flex"></div>
+              <a className="App-link" href="https://elpuentepublicidad.com" target="_blank" rel="noopener noreferrer">
                 ESCRÍBENOS
               </a>
           </div>
         </div>
-        <img src='./images/falsa.jpg' className='ouh-yeah mb-2' alt='ouh-yeah' />
-        <img src='./images/que-hacemos.png' className='que-hacemos mb-2' alt='que-hacemos' />
+        <img src={yeah} className='yeah' alt='ouh-yeah' />
+        <img src={hacemos} className='hacemos' alt='que-hacemos' />
       </header>
     </div>
   );
