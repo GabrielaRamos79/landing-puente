@@ -245,6 +245,29 @@
   margin-left: 5%;
 }
 
+.section-clients {
+  background-color: #1c1c1c; /* Ajusta el color de fondo según tu diseño */
+  padding: 50px 0;
+}
+
+.client-logo {
+  max-width: 150px; /* Ajusta el tamaño máximo de los logos */
+  opacity: 0.8;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.client-logo:hover {
+  opacity: 1;
+}
+
+.btn-yes {
+  background-color: #c9ea50;
+  color: #161719;
+  padding: 10px 20px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
