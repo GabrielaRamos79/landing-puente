@@ -1,8 +1,7 @@
 import React from 'react';
 import './App.css';
-import acento from './images/Acento.png'
 import logo from './images/gif2.png'
-import puente from './images/logo.png'
+import puente from './images/logopuente.png'
 import yeah from './images/yeah.png'
 import hacemos from './images/quehacemos.png'
 import marca from './images/marca.png'
@@ -32,7 +31,6 @@ function App() {
         <div className='row'>
           <div className='col-md-6 text-start'>
             <h1 className='highlight-text mb-4'>
-              <img src={acento} className='acento mb-2' alt='acento' />
               <span className='rayo'></span>
               Somos
               <img src={puente} className='puente-logo mb-2' alt='puente-logo' />
