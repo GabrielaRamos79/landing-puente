@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './App.css';
 import logo from './images/gif2.png'
 import puente from './images/logopuente.png'
@@ -28,9 +28,23 @@ import montosapro from './images/proyectos/montosapro.png'
 import lesrochespro from './images/proyectos/lesrochespro.png'
 import almapro from './images/proyectos/almapro.png'
 import porshepro from './images/proyectos/porshepro.png'
+import mas from './images/mas.png'
+import gepopup from './images/gepopup.png'
 import 'bootstrap/dist/css/bootstrap.min.css'
 
 function App() {
+  const [showPopup, setShowPopup] = useState(false);
+  const [currentImage, setCurrentImage] = useState(null);
+
+  const handleImageClick = (image) => {
+    setCurrentImage(image);
+    setShowPopup(true);
+  };
+
+  const handleClosePopup = () => {
+    setShowPopup(false);
+    setCurrentImage(null);
+  };
   return (
     <div className="container my-5">
       <header className="App-header text-center">
@@ -213,7 +227,7 @@ function App() {
           {/* Primera fila de proyectos */}
           <div className="row">
             <div className="col-md-4 mb-4">
-              <div className="project-card">
+              <div className="project-card" onClick={() => handleImageClick(gepopup)}>
                 <img src={gepro} alt="General Elevadores" className="img-fluid" />
                 <div className="project-info mt-2">
                   <small>General Elevadores</small>
@@ -222,7 +236,7 @@ function App() {
               </div>
             </div>
             <div className="col-md-4 mb-4">
-              <div className="project-card">
+              <div className="project-card" onClick={() => handleImageClick(gepopup)}>
                 <img src={supermexpro} alt="Supermex" className="img-fluid" />
                 <div className="project-info mt-2">
                   <small>Supermex</small>
@@ -231,7 +245,7 @@ function App() {
               </div>
             </div>
             <div className="col-md-4 mb-4">
-              <div className="project-card">
+              <div className="project-card" onClick={() => handleImageClick(gepopup)}>
                 <img src={montosapro} alt="Montosa" className="img-fluid" />
                 <div className="project-info mt-2">
                   <small>Montosa</small>
@@ -244,7 +258,7 @@ function App() {
           {/* Segunda fila de proyectos */}
           <div className="row">
             <div className="col-md-4 mb-4">
-              <div className="project-card">
+              <div className="project-card" onClick={() => handleImageClick(gepopup)}>
                 <img src={lesrochespro} alt="Les Roches" className="img-fluid" />
                 <div className="project-info mt-2">
                   <small>Les Roches</small>
@@ -253,7 +267,7 @@ function App() {
               </div>
             </div>
             <div className="col-md-4 mb-4">
-              <div className="project-card">
+              <div className="project-card" onClick={() => handleImageClick(gepopup)}>
                 <img src={almapro} alt="Alma Láser" className="img-fluid" />
                 <div className="project-info mt-2">
                   <small>Alma Láser</small>
@@ -262,7 +276,7 @@ function App() {
               </div>
             </div>
             <div className="col-md-4 mb-4">
-              <div className="project-card">
+              <div className="project-card" onClick={() => handleImageClick(gepopup)}>
                 <img src={porshepro} alt="Porsche" className="img-fluid" />
                 <div className="project-info mt-2">
                   <small>Porsche</small>
@@ -271,6 +285,15 @@ function App() {
               </div>
             </div>
           </div>
+           {/* Popup de imagen */}
+           {showPopup && (
+            <div className="popup-overlay">
+              <div className="popup-content">
+                <img src={currentImage} alt="Popup" className="img-fluid" />
+                <img src={mas} alt='volver' className='close-btn' onClick={handleClosePopup} />
+              </div>
+            </div>
+          )}
         </div>
       </section>
     </div>
