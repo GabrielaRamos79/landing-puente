@@ -6,6 +6,38 @@
 }
 
 @font-face {
+  font-family:'AghartiBold';
+  src: local('AghartiBold'), url('./fonts/AghartiBold.otf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family:'AghartiCondensed';
+  src: local('AghartiCondensed'), url('./fonts/AghartiCondensed.otf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family:'AghartiCondensedSemiLight';
+  src: local('AghartiCondensedSemiLight'), url('./fonts/AghartiCondensedSemiLight.otf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family:'AghartiExtraCondensed';
+  src: local('AghartiExtraCondensed'), url('./fonts/AghartiExtraCondensed.otf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family:'AghartiCondensedLight';
+  src: local('AghartiCondensedLight'), url('./fonts/AghartiCondensedLight.otf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
   font-family: 'Hurtmore';
   src: url('./fonts/Hurtmore.ttf') format('truetype');
 }
@@ -240,7 +272,7 @@
   margin-left: 5%;
 }
 .telita{
-  font-family: 'Inter_18pt-Light', sans-serif;
+  font-family: 'Hurtmore.ttf', sans-serif;
   font-size: 1.5rem;
   margin-left: 5%;
 }
