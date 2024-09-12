@@ -39,7 +39,7 @@
 
 @font-face {
   font-family: 'Hurtmore';
-  src: url('./fonts/Hurtmore.ttf') format('truetype');
+  src: local('Hurtmore') url('./fonts/Hurtmore.ttf') format('truetype');
 }
 
 @font-face {
@@ -96,7 +96,7 @@
   max-width: 300px;
   margin-top: 50%;
   margin-bottom: 20px;
-  margin-right: 70%;
+  margin-right: auto;
   /* height: 40vmin;
   pointer-events: none; */
 }
@@ -118,6 +118,17 @@
   background-color: #061599;
   border-radius: 50%;
   transform: rotate(70deg);
+}
+
+.highlight {
+  position: relative;
+  display: inline-block;
+  font-weight: bold; /* O el estilo que quieras darle al texto */
+  background-image: url('./images/Linea.png'); /* Ruta de la imagen */
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: contain;
+  padding-bottom: 5px; /* Espacio para la imagen debajo del texto */
 }
 
 .highlight-text::before {
@@ -210,7 +221,7 @@
 .App-link {
   background-color: #c9ea50;
   color: #161719;
-  font-family: 'AghartiBold', sans-serif;
+  font-family: 'AghartiCondensedSemiLight', sans-serif;
   font-size: 50px;
   font-weight:lighter;
   box-shadow: 1px 1px 2px rgba(0,0,0,0.1);
@@ -238,8 +249,8 @@
 }
 
 .services-section h3 {
-  font-family: 'AghartiVF', sans-serif;
-  font-size: 3rem;
+  font-family: 'AghartiCondensedSemiLight', sans-serif;
+  font-size: 3.5rem;
   font-weight:lighter;
   margin-bottom: 15px;
   color: #161719;
@@ -272,7 +283,7 @@
   margin-left: 5%;
 }
 .telita{
-  font-family: 'Hurtmore.ttf', sans-serif;
+  font-family: 'Hurtmore', sans-serif;
   font-size: 1.5rem;
   margin-left: 5%;
 }
@@ -292,12 +303,58 @@
   opacity: 1;
 }
 
-.btn-yes {
+.quieres{
+  font-family: 'Inter_18-Bold', sans-serif;
+  color:#e9eaf0;
+  font-size: 20px;
+}
+.section-clients .btn-yes {
   background-color: #c9ea50;
+  font-family: 'AghartiCondensed', sans-serif;
   color: #161719;
-  padding: 10px 20px;
-  font-size: 18px;
+  /* padding: 10px 20px; */
+  font-size: 50px;
   font-weight: bold;
+  border-radius: 0;
+  border-color: #c9ea50;
+  width: 10%;
+  height: 50%;
+}
+
+.projects-section {
+  background-color: #f7f7f7; /* Ajusta el color de fondo de la sección si lo deseas */
+  padding: 50px 0;
+}
+
+.section-title {
+  font-family: 'Inter_18pt-ExtraBold', sans-serif;
+  font-size: 2.5rem;
+  color: #161719;
+}
+
+.project-card {
+  background-color: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.project-card:hover {
+  transform: scale(1.05);
+}
+
+.project-info small {
+  font-family: 'Inter_18pt-Light', sans-serif;
+  font-size: 0.875rem;
+  color: #7a7a7a;
+}
+
+.project-info h4 {
+  font-family: 'Inter_18pt-SemiBold', sans-serif;
+  font-size: 1.2rem;
+  color: #161719;
+  margin-top: 5px;
 }
 
 @keyframes App-logo-spin {

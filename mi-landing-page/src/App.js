@@ -3,14 +3,14 @@ import './App.css';
 import logo from './images/gif2.png'
 import puente from './images/logopuente.png'
 import yeah from './images/yeah.png'
-import hacemos from './images/quehacemos.png'
-import marca from './images/marca.png'
-import digital from './images/digital.png'
-import media from './images/media.png'
-import branding from './images/branding.png'
-import web from './images/web.png'
-import audiovisual from './images/audiovisual.png'
-import alotrolado from './images/alotrolado.png'
+import hacemos from './images/curvy/quehacemos.png'
+import marca from './images/curvy/marca.png'
+import digital from './images/curvy/digital.png'
+import media from './images/curvy/media.png'
+import branding from './images/curvy/branding.png'
+import web from './images/curvy/web.png'
+import audiovisual from './images/curvy/audiovisual.png'
+import alotrolado from './images/curvy/alotrolado.png'
 import flechaizq from './images/flechaizq.png'
 import LesRoches from './images/logos/LesRoches.png'
 import Luxudise from './images/logos/Luxudise.png'
@@ -22,6 +22,12 @@ import Mediamaraton from './images/logos/Mediamaraton.png'
 import Alma from './images/logos/Alma.png'
 import Alabardero from './images/logos/Alabardero.png'
 import Segurestil from './images/logos/Segurestil.png'
+import gepro from './images/proyectos/gepro.png'
+import supermexpro from './images/proyectos/supermexpro.png'
+import montosapro from './images/proyectos/montosapro.png'
+import lesrochespro from './images/proyectos/lesrochespro.png'
+import almapro from './images/proyectos/almapro.png'
+import porshepro from './images/proyectos/porshepro.png'
 import 'bootstrap/dist/css/bootstrap.min.css'
 
 function App() {
@@ -40,8 +46,8 @@ function App() {
             <img src={logo} className="App-logo" alt="logo" />
           </div>
         </div>
-        <div className='row mt-5'>
-          <div className='col-md-12 d-flex justify-content-end align-items-start'>
+        <div className='row mt-2'>
+          <div className='col-md-12 text-end d-flex justify-content-end align-items-start'>
             <h2 className='fw-bold'>
               tu agencia<br />
               de publicidad<br />
@@ -50,11 +56,11 @@ function App() {
           </div>
         </div>
         <div className="row mt-4">
-          <div className="col-md-8 text-start d-flex flex-column justify-content-center">
+          <div className="col-md9 text-start d-flex flex-column justify-content-center">
             <p>
               Hacemos las cosas diferentes desde el otro lado<br />
               del branding: publicidad, branded content, diseño<br />
-              y estrategia, ¡con un <b>punch de flow creativo</b>!<br />
+              y estrategia, ¡con un <span className='highlight'><b>punch de flow creativo</b></span>!<br />
             </p>
             <p>Si quieres revolucionar tu marca y llevarla hasta el<br></br>éxito, es el momento de cruzar al otro lado.<br />
             </p>
@@ -130,7 +136,7 @@ function App() {
               </ul>
             </div>
             <div className="col-md-4">
-              <h3>PRODUCCIÓN <img src={audiovisual} className='curvy' alt='audiovisual' /></h3>
+              <h3>PRODUCCION <img src={audiovisual} className='curvy' alt='audiovisual' /></h3>
               <ul>
                 <li>Spot</li>
                 <li>Vídeo corporativo</li>
@@ -188,12 +194,84 @@ function App() {
           {/* Texto final con el botón */}
           <div className="row mt-5">
             <div className="col text-center">
-              <p>¿Quieres ser una de ellas?</p>
+              <p className='quieres'>¿Quieres ser una de ellas?</p>
               <a href="#" className="btn btn-primary btn-lg btn-yes">YES!</a>
             </div>
           </div>
         </div>
+      </section>
+      {/* Nueva sección de proyectos */}
+      <section className="projects-section mt-5">
+        <div className="container">
+          {/* Título de la sección */}
+          <div className="row mb-5">
+            <div className="col text-start">
+              <h2 className="section-title">Te hacemos spoiler de nuestros mejores proyectos</h2>
+            </div>
+          </div>
 
+          {/* Primera fila de proyectos */}
+          <div className="row">
+            <div className="col-md-4 mb-4">
+              <div className="project-card">
+                <img src={gepro} alt="General Elevadores" className="img-fluid" />
+                <div className="project-info mt-2">
+                  <small>General Elevadores</small>
+                  <h4>Actualizo mi branding y pasa esto…</h4>
+                </div>
+              </div>
+            </div>
+            <div className="col-md-4 mb-4">
+              <div className="project-card">
+                <img src={supermexpro} alt="Supermex" className="img-fluid" />
+                <div className="project-info mt-2">
+                  <small>Supermex</small>
+                  <h4>El rebranding que la competencia no quiere que veas.</h4>
+                </div>
+              </div>
+            </div>
+            <div className="col-md-4 mb-4">
+              <div className="project-card">
+                <img src={montosapro} alt="Montosa" className="img-fluid" />
+                <div className="project-info mt-2">
+                  <small>Montosa</small>
+                  <h4>Seguro que no sabías que el aguacate también servía para esto.</h4>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* Segunda fila de proyectos */}
+          <div className="row">
+            <div className="col-md-4 mb-4">
+              <div className="project-card">
+                <img src={lesrochespro} alt="Les Roches" className="img-fluid" />
+                <div className="project-info mt-2">
+                  <small>Les Roches</small>
+                  <h4>Destino, ¿se nace o se hace?</h4>
+                </div>
+              </div>
+            </div>
+            <div className="col-md-4 mb-4">
+              <div className="project-card">
+                <img src={almapro} alt="Alma Láser" className="img-fluid" />
+                <div className="project-info mt-2">
+                  <small>Alma Láser</small>
+                  <h4>Después de ver esto, vas a empezar a creer en el poder del Alma...</h4>
+                </div>
+              </div>
+            </div>
+            <div className="col-md-4 mb-4">
+              <div className="project-card">
+                <img src={porshepro} alt="Porsche" className="img-fluid" />
+                <div className="project-info mt-2">
+                  <small>Porsche</small>
+                  <h4>¿Qué fiera tiene cuatro patas que ruedan?</h4>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </section>
     </div>
   );
