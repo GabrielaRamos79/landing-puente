@@ -29,6 +29,8 @@ import lesrochespro from './images/proyectos/lesrochespro.png'
 import almapro from './images/proyectos/almapro.png'
 import porshepro from './images/proyectos/porshepro.png'
 import mas from './images/mas.png'
+import linea from './images/Linea.png'
+import estrella from './images/estrella.png'
 import gepopup from './images/gepopup.png'
 import 'bootstrap/dist/css/bootstrap.min.css'
 
