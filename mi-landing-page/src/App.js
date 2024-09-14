@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 import './App.css';
-import logo from './images/gif2.png'
-import puente from './images/logopuente.png'
-import yeah from './images/yeah.png'
+import logo from './images/details/gif2.png'
+import puente from './images/details/logopuente.png'
+import yeah from './images/details/yeah.png'
 import hacemos from './images/curvy/quehacemos.png'
 import marca from './images/curvy/marca.png'
 import digital from './images/curvy/digital.png'
@@ -11,7 +11,7 @@ import branding from './images/curvy/branding.png'
 import web from './images/curvy/web.png'
 import audiovisual from './images/curvy/audiovisual.png'
 import alotrolado from './images/curvy/alotrolado.png'
-import flechaizq from './images/flechaizq.png'
+import flechaizq from './images/details/flechaizq.png'
 import LesRoches from './images/logos/LesRoches.png'
 import Luxudise from './images/logos/Luxudise.png'
 import Malaga from './images/logos/Malaga.png'
@@ -28,11 +28,13 @@ import montosapro from './images/proyectos/montosapro.png'
 import lesrochespro from './images/proyectos/lesrochespro.png'
 import almapro from './images/proyectos/almapro.png'
 import porshepro from './images/proyectos/porshepro.png'
-import mas from './images/mas.png'
-import linea from './images/Linea.png'
-import estrella from './images/estrella.png'
-import gepopup from './images/gepopup.png'
-import textura2 from './images/textura2.png'
+import mas from './images/details/mas.png'
+import linea from './images/details/Linea.png'
+import estrella from './images/details/estrella.png'
+import gepopup from './images/proyectos/gepopup.png'
+import textura2 from './images/details/textura2.png'
+import flecha from './images/details/Flecha.png'
+import salpicadoazul from './images/details/salpicadoazul.png'
 import 'bootstrap/dist/css/bootstrap.min.css'
 
 function App() {
@@ -373,15 +375,49 @@ function App() {
           <h2>Ready para que tu marca empiece a petarlo?</h2>
           <div className="send-wrapper">
             <button type="submit" className="send-button">YASSSSSS!</button>
-            {/* <img src={sendIcon} alt="send icon" className="send-icon" /> */}
+            <img src={flecha} alt="arrow icon" className="arrow-icon" />
+            <span className="arrow-text">DALE PARA ENVIAR</span>
           </div>
         </div>
-        <div className="form-group terms">
+        <div className="terms-wrapper">
           <input type="checkbox" id="terms" />
-          <label htmlFor="terms">He leído y acepto la política de privacidad</label>
+          <label htmlFor="terms">He leído y acepto la  <a href='https://www.elpuentepublicidad.com/politica-de-privacidad'>política de privacidad</a></label>
         </div>
       </form>
       </div>
+      <div className="contact-section">
+      <h1 className="big-title">¿TE ATREVES A CRUZAR?</h1>
+      <div className="contact-info">
+        <div className="contact-left">
+          <p>hola@elpuentepublicidad.com</p>
+          <p>(+34) 952 424 234</p>
+        </div>
+        <div className="contact-right">
+          <p>C/ Compositor Lehmberg Ruiz,</p>
+          <p>6 Edificio Ibiza, oficina 4 Málaga</p>
+        </div>
+        </div>
+      </div>
+      <footer className="footer-section">
+      <div className="social-links">
+        <a href="https://www.instagram.com/elpuentebranding/" target="_blank" rel="noopener noreferrer">INSTAGRAM</a>
+        <a href="https://www.linkedin.com/company/el-puente-publicidad/" target="_blank" rel="noopener noreferrer" className="highlighted">LINKEDIN</a>
+        <div className="vimeo-wrapper">
+          <a href="https://vimeo.com/elpuentepublicidad" target="_blank" rel="noopener noreferrer">VIMEO</a>
+          <img src={salpicadoazul} alt="Salpicado" className="splatter-image" />
+        </div>
+      </div>
+      <div className="legal-links">
+        <a href="https://www.elpuentepublicidad.com/aviso-legal">aviso legal</a>
+        <a href="https://www.elpuentepublicidad.com/politica-de-privacidad">política de privacidad</a>
+        <a href="https://www.elpuentepublicidad.com/politica-de-cookies">política de cookies</a>
+      </div>
+      <div className="footer-logo">
+        <a href='https://www.elpuentepublicidad.com/' target="_blank" rel="noopener noreferrer">
+          <img src={puente} alt="El Puente Branding Logo" />
+        </a>
+      </div>
+    </footer>
     </div>
   );
 }

@@ -1,38 +1,38 @@
 @font-face {
   font-family:'AghartiVF';
-  src: local('AghartiVF'), url('./fonts/AghartiVF.ttf') format('truetype');
+  src: local('AghartiVF'), url('./fonts/Agharti/AghartiVF.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family:'AghartiBold';
-  src: local('AghartiBold'), url('./fonts/AghartiBold.otf') format('truetype');
+  src: local('AghartiBold'), url('./fonts/Agharti/AghartiBold.otf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family:'AghartiCondensed';
-  src: local('AghartiCondensed'), url('./fonts/AghartiCondensed.otf') format('truetype');
+  src: local('AghartiCondensed'), url('./fonts/Agharti/AghartiCondensed.otf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
   font-family:'AghartiCondensedSemiLight';
-  src: local('AghartiCondensedSemiLight'), url('./fonts/AghartiCondensedSemiLight.otf') format('truetype');
+  src: local('AghartiCondensedSemiLight'), url('./fonts/Agharti/AghartiCondensedSemiLight.otf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
   font-family:'AghartiExtraCondensed';
-  src: local('AghartiExtraCondensed'), url('./fonts/AghartiExtraCondensed.otf') format('truetype');
+  src: local('AghartiExtraCondensed'), url('./fonts/Agharti/AghartiExtraCondensed.otf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
   font-family:'AghartiCondensedLight';
-  src: local('AghartiCondensedLight'), url('./fonts/AghartiCondensedLight.otf') format('truetype');
+  src: local('AghartiCondensedLight'), url('./fonts/Agharti/AghartiCondensedLight.otf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
@@ -44,47 +44,47 @@
 
 @font-face {
   font-family: 'Inter_18pt-Black';
-  src: url('./fonts/Inter_18pt-Black.ttf') format('truetype');
+  src: url('./fonts/Inter/Inter_18pt-Black.ttf') format('truetype');
 }
 
 @font-face {
   font-family: 'Inter_18pt-Bold';
-  src: url('./fonts/Inter_18pt-Bold.ttf') format('truetype');
+  src: url('./fonts/Inter/Inter_18pt-Bold.ttf') format('truetype');
 }
 
 @font-face {
   font-family: 'Inter_18pt-ExtraBold';
-  src: url('./fonts/Inter_18pt-ExtraBold.ttf') format('truetype');
+  src: url('./fonts/Inter/Inter_18pt-ExtraBold.ttf') format('truetype');
 }
 
 @font-face {
   font-family: 'Inter_18pt-ExtraLight';
-  src: url('./fonts/Inter_18pt-ExtraLight.ttf') format('truetype');
+  src: url('./fonts/Inter/Inter_18pt-ExtraLight.ttf') format('truetype');
 }
 
 @font-face {
   font-family: 'Inter_18pt-Italic';
-  src: url('./fonts/Inter_18pt-Italic.ttf') format('truetype');
+  src: url('./fonts/Inter/Inter_18pt-Italic.ttf') format('truetype');
 }
 
 @font-face {
   font-family: 'Inter_18pt-Light';
-  src: url('./fonts/Inter_18pt-Light.ttf') format('truetype');
+  src: url('./fonts/Inter/Inter_18pt-Light.ttf') format('truetype');
 }
 
 @font-face {
   font-family: 'Inter_18pt-Medium';
-  src: url('./fonts/Inter_18pt-Medium.ttf') format('truetype');
+  src: url('./fonts/Inter/Inter_18pt-Medium.ttf') format('truetype');
 }
 
 @font-face {
   font-family: 'Inter_18pt-Regular';
-  src: url('./fonts/Inter_18pt-Regular.ttf') format('truetype');
+  src: url('./fonts/Inter/Inter_18pt-Regular.ttf') format('truetype');
 }
 
 @font-face {
   font-family: 'Inter_18pt-SemiBold';
-  src: url('./fonts/Inter_18pt-SemiBold.ttf') format('truetype');
+  src: url('./fonts/Inter/Inter_18pt-SemiBold.ttf') format('truetype');
 }
 
 /* .container {
@@ -124,7 +124,7 @@
   position: relative;
   display: inline-block;
   font-weight: bold; /* O el estilo que quieras darle al texto */
-  background-image: url('./images/Linea.png'); /* Ruta de la imagen */
+  background-image: url('./images/details/Linea.png'); /* Ruta de la imagen */
   background-position: bottom;
   background-repeat: no-repeat;
   background-size: contain;
@@ -488,7 +488,7 @@
 }
 
 .contact-form {
-  background-image:url('./images/textura2.png');
+  background-image:url('./images/details/textura2.png');
   padding: 50px;
   max-width: 800px;
   margin: 0 auto;
@@ -511,8 +511,8 @@
 }
 
 label {
-  font-size: 1.5rem;
-  font-weight: bold;
+  font-size: 2.5rem;
+  font-family:'Inter_18pt-Medium';
   display: block;
   margin-bottom: 10px;
 }
@@ -524,12 +524,12 @@ label {
 }
 
 .form-input {
-  width: 100%;
+  width: 50%;
   border: none;
-  border-bottom: 2px solid black;
-  padding: 10px;
-  font-size: 1.2rem;
-  font-family: 'Inter_18pt-Regular', sans-serif;
+  border-bottom: 3px solid black;
+  padding: 5px;
+  font-size: 0.5rem;
+  /* font-family: 'Inter_18pt-Regular', sans-serif; */
   background-color: transparent;
 }
 
@@ -540,7 +540,7 @@ label {
 .star-icon {
   width: 40px;
   position: absolute;
-  right: 10px;
+  right: 43%;
 }
 
 textarea.form-input {
@@ -559,6 +559,12 @@ textarea.form-input {
   margin-top: 20px;
 }
 
+.button-container {
+  position: relative;
+  display: inline-block;
+  margin-top: 20px;
+}
+
 .send-button {
   background-color: #c9ea50;
   color: #161719;
@@ -567,6 +573,24 @@ textarea.form-input {
   padding: 0px 20px;
   border: none;
   cursor: pointer;
+  margin-left: 70%;
+}
+
+.arrow-icon {
+  position: absolute;
+  top: 78%;
+  right: 22%;
+  width: 70px;
+}
+
+.arrow-text {
+  position: absolute;
+  top: 76.5%;
+  right: 11%;
+  font-family: 'Hurtmore', sans-serif;
+  color: #061599;
+  font-size: 1.2rem;
+  transform: rotate(-10deg);
 }
 
 .send-icon {
@@ -574,19 +598,144 @@ textarea.form-input {
   margin-left: 20px;
 }
 
-.terms {
+.terms-wrapper {
   display: flex;
   align-items: center;
   margin-top: 20px;
 }
 
-.terms input {
+.terms-wrapper input {
   margin-right: 10px;
 }
 
-.terms label {
+.terms-wrapper label {
   font-size: 0.9rem;
   color: #161719;
+}
+
+/* Sección de contacto */
+.contact-section {
+  background-color: #161719; /* Fondo oscuro */
+  color: white;
+  padding: 50px 0; /* Espaciado */
+  text-align: center;
+  font-family: 'AghartiCondensed', sans-serif;
+}
+
+/* Título grande */
+.big-title {
+  font-family: 'AghartiVF', sans-serif;
+  font-size: 8rem; /* Tamaño grande para el título */
+  text-align: left;
+  margin-left: 5%;
+  margin-bottom: 15%; /* Separación del contenido */
+  color: white;
+}
+
+/* Estilos para los datos de contacto */
+.contact-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 800px; /* Ancho máximo para centrar el contenido */
+  margin-left: 5%;
+  font-family: 'Inter_18pt-SemiBold', sans-serif;
+}
+
+/* Estilos para las dos columnas de contacto */
+.contact-left, .contact-right {
+  font-size: 1.6rem;
+  line-height: 1;
+  text-align: left;
+}
+
+/* Ajustes para pantallas pequeñas */
+@media (max-width: 768px) {
+  .contact-info {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .contact-left, .contact-right {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+}
+
+/* Footer section styles */
+.footer-section {
+  background-color: #e9eaf0;
+  padding: 50px 20px;
+  text-align: center;
+  /* font-family: 'Inter_18pt-Regular', sans-serif; */
+  position: relative;
+}
+
+/* Social links styling */
+.social-links {
+  display: flex;
+  justify-content: left;
+  gap: 50px;
+  font-family: 'Inter_18pt-Bold';
+  font-size: 2.5rem;
+  font-weight: bolder;
+  margin-bottom: 30px;
+  margin-left: 5%;
+}
+
+.social-links a {
+  text-decoration: none;
+  color: black;
+}
+
+.social-links .highlighted {
+  position: relative;
+  color: black;
+  /* background-color: #c9ea50; */
+  padding: 0 10px;
+  border-radius: 5px;
+}
+
+/* Vimeo section with the splatter image */
+.vimeo-wrapper {
+  position: relative;
+  display: inline-block;
+}
+
+.vimeo-wrapper a {
+  position: relative;
+  z-index: 1;
+}
+
+.splatter-image {
+  position: absolute;
+  top: -117px;
+  right: -120px;
+  z-index: 0;
+  width: 280%;
+  opacity: 0.7;
+}
+
+/* Legal links styling */
+.legal-links {
+  display: flex;
+  justify-content: left;
+  gap: 30px;
+  font-size: 0.9rem;
+  margin-bottom: 30px;
+  margin-left: 5%;
+}
+
+.legal-links a {
+  text-decoration: none;
+  color: black;
+  font-weight: bolder;
+}
+
+/* Footer logo */
+.footer-logo img {
+  width: 150px;
+  margin-top: 20px;
 }
 
 @keyframes App-logo-spin {

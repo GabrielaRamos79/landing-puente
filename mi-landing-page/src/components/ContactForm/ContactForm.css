@@ -1,0 +1,125 @@
+.contact-form {
+    background-image:url('./images/textura2.png');
+    padding: 50px;
+    max-width: 800px;
+    margin: 0 auto;
+    font-family: 'Inter_18pt-Regular', sans-serif;
+    position: relative;
+  }
+  
+  .form-title {
+    font-family: 'Hurtmore', sans-serif;
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    margin-left: 20%;
+    color: #161719;
+  }
+  
+  .form-group {
+    margin-bottom: 30px;
+    margin-left: 20%;
+    margin-right: 20%;
+  }
+  
+  label {
+    font-size: 2.5rem;
+    font-family:'Inter_18pt-Medium';
+    display: block;
+    margin-bottom: 10px;
+  }
+  
+  .input-wrapper {
+    display: flex;
+    align-items: center;
+    position: relative;
+  }
+  
+  .form-input {
+    width: 50%;
+    border: none;
+    border-bottom: 3px solid black;
+    padding: 5px;
+    font-size: 0.5rem;
+    /* font-family: 'Inter_18pt-Regular', sans-serif; */
+    background-color: transparent;
+  }
+  
+  .form-input:focus {
+    outline: none;
+  }
+  
+  .star-icon {
+    width: 40px;
+    position: absolute;
+    right: 43%;
+  }
+  
+  textarea.form-input {
+    height: 100px;
+  }
+  
+  .form-group h2{
+    font-size: 2.5rem;
+    font-weight: bold;
+    font-family: 'Inter_18pt-Bold';
+  }
+  
+  .send-wrapper {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+  }
+  
+  .button-container {
+    position: relative;
+    display: inline-block;
+    margin-top: 20px;
+  }
+  
+  .send-button {
+    background-color: #c9ea50;
+    color: #161719;
+    font-family: 'AghartiCondensed', sans-serif;
+    font-size: 2.5rem;
+    padding: 0px 20px;
+    border: none;
+    cursor: pointer;
+    margin-left: 70%;
+  }
+  
+  .arrow-icon {
+    position: absolute;
+    top: 78%;
+    right: 22%;
+    width: 70px;
+  }
+  
+  .arrow-text {
+    position: absolute;
+    top: 76.5%;
+    right: 11%;
+    font-family: 'Hurtmore', sans-serif;
+    color: #061599;
+    font-size: 1.2rem;
+    transform: rotate(-10deg);
+  }
+  
+  .send-icon {
+    width: 50px;
+    margin-left: 20px;
+  }
+  
+  .terms-wrapper {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+  }
+  
+  .terms-wrapper input {
+    margin-right: 10px;
+  }
+  
+  .terms-wrapper label {
+    font-size: 0.9rem;
+    color: #161719;
+  }

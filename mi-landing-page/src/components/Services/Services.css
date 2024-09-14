@@ -1,0 +1,50 @@
+.hacemos {
+    width: 25%;
+    align-self: start;
+    margin-left: 10%;
+  }
+  
+  .services-section{
+    background-color: #e9eaf0;
+    margin-top: 0%;
+  }
+  
+  .services-section h3 {
+    font-family: 'AghartiCondensedSemiLight', sans-serif;
+    font-size: 3.5rem;
+    font-weight:lighter;
+    margin-bottom: 15px;
+    color: #161719;
+  }
+  
+  .services-section ul {
+    list-style-type: none;
+    padding-left: 0;
+  }
+  
+  .services-section li {
+    font-family: 'Inter_18pt-SemiBold', sans-serif;
+    font-size: 1rem;
+    margin-bottom: 10px;
+  }
+  
+  .curvy{
+    width: 16%;
+  }
+  
+  .cruzado{
+    font-family: 'AghartiVF', sans-serif;
+    font-size: 5.5rem;
+    margin-top: 10%;
+    margin-left: 5%;
+  }
+  .otrolado{
+    width: 50%;
+    margin-top: 3%;
+    margin-left: 5%;
+  }
+  .telita{
+    font-family: 'Hurtmore', sans-serif;
+    font-size: 1.5rem;
+    margin-left: 5%;
+  }

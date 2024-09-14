@@ -1,0 +1,85 @@
+.projects-section {
+  background-color: #e9eaf0; /* Ajusta el color de fondo de la sección si lo deseas */
+  padding: 50px 0;
+}
+
+.section-title {
+  font-family: "Inter_18pt-ExtraBold", sans-serif;
+  font-size: 2.5rem;
+  color: #161719;
+}
+
+.project-card {
+  background-color: #e9eaf0;
+  border-radius: 0px;
+  overflow: hidden;
+  /* box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1); */
+  transition: transform 0.3s ease;
+}
+
+.project-card:hover {
+  transform: scale(1.05);
+}
+
+.project-info small {
+  font-family: "Inter_18pt-Bold", sans-serif;
+  font-size: 0.875rem;
+  color: #161719;
+}
+
+.project-info h4 {
+  font-family: "Inter_18pt-ExtraBold", sans-serif;
+  font-size: 1.3rem;
+  color: #161719;
+  margin-top: 5px;
+}
+
+/* Estilos para el popup */
+.popup-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 254, 254, 0.7); /* Fondo semitransparente */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.popup-content {
+  position: relative;
+  /* background-color: #fff; */
+  padding: 20px;
+  /* border-radius: 8px; */
+  max-width: 80%;
+  max-height: 80%;
+  overflow: auto;
+}
+
+.popup-content img {
+  /* width: 100%; */
+  height: auto;
+  /* border-radius: 8px; */
+}
+
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 30px;
+  height: 30px;
+  background-color: #c9ea50;
+  /* color: #061599; */
+  /* border: none; */
+  /* font-size: 25px; */
+  /* padding: 5px 10px; */
+  cursor: pointer;
+  z-index: 1100;
+  border-radius: 50px;
+}
+
+.close-btn:hover {
+  opacity: 0.8;
+}

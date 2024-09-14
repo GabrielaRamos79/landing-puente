@@ -1,0 +1,145 @@
+.App-logo {
+    width: 100%;
+    max-width: 300px;
+    margin-top: 50%;
+    margin-bottom: 20px;
+    margin-right: auto;
+    /* height: 40vmin;
+    pointer-events: none; */
+  }
+  
+  .highlight-text {
+    font-family: 'Inter_18pt-ExtraLight', sans-serif;
+    /* margin-right: 15px;
+    margin-top: 50px; */
+    position: relative;
+    display: inline-block;
+  }
+  
+  .rayo {
+    position: absolute;
+    top: 34px;
+    left: -20px;
+    width: 8px;
+    height: 25px;
+    background-color: #061599;
+    border-radius: 50%;
+    transform: rotate(70deg);
+  }
+  
+  .highlight {
+    position: relative;
+    display: inline-block;
+    font-weight: bold; /* O el estilo que quieras darle al texto */
+    background-image: url('./images/Linea.png'); /* Ruta de la imagen */
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: contain;
+    padding-bottom: 5px; /* Espacio para la imagen debajo del texto */
+  }
+  
+  .highlight-text::before {
+    content: '';
+    position: absolute;
+    top: 20px;
+    left: -24px;
+    width: 8px;
+    height: 25px;
+    background-color: #061599;
+    border-radius: 50%;
+    /* margin-right: 15px; */
+    transform: rotate(110deg); /* Ajusta el ángulo según sea necesario */
+  }
+  
+  /* Pseudo-elemento para el segundo "rayo" */
+  .highlight-text::after {
+    content: '';
+    position: absolute;
+    top: 5px;
+    left: -20px;
+    width: 8px;
+    height: 25px;
+    background-color: #061599;
+    border-radius: 50%;
+    transform: rotate(140deg); /* Ajusta el ángulo */
+  }
+  
+  /* Elemento base */
+  /* .highlight-text span {
+    position: absolute;
+    top: 15px;
+    left: 50px;
+    width: 8px;
+    height: 25px;
+    background-color: blue;
+    border-radius: 50%;
+    transform: rotate(0deg); 
+  } */
+  
+  .puente-logo {
+    height: 60px; /* Tamaño del logo de "puente" */
+    vertical-align:middle;
+    margin-top: 60px;
+    margin-left: 15px;
+  }
+  
+  /* @media (prefers-reduced-motion: no-preference) {
+    .App-logo {
+      animation: App-logo-spin infinite 20s linear;
+    }
+  } */
+  
+  .App-header {
+    background-color: #e9eaf0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:space-between;
+    font-size: calc(10px + 2vmin);
+    color: black;
+  }
+  
+  .App-header h1{
+    font-family: 'Inter_18pt-ExtraLight', sans-serif;
+    font-size: 2.5rem;
+    /* align-self: flex-start; */
+  }
+  
+  .fw-bold{
+    font-family: 'Inter_18pt-ExtraLight', sans-serif;
+    font-size: 2rem;
+    margin-top: 0;
+    margin-right: 0%;
+    align-self: flex-end;
+    text-align: right;
+  }
+  
+  /* .fw-bold{
+    margin-top: 50%;
+  } */
+  
+  .App-header p{
+    font-family: 'Agharti', sans-serif;
+    font-size: 1rem;
+    /* align-self: flex-start; */
+    /* text-align: left; */
+  }
+  .App-link {
+    background-color: #c9ea50;
+    color: #161719;
+    font-family: 'AghartiCondensedSemiLight', sans-serif;
+    font-size: 50px;
+    font-weight:lighter;
+    box-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+    text-decoration:none;
+    align-self:flex-end;
+    letter-spacing: -0.5px;
+    transform: scaleY(1.2);
+  }
+  
+  .yeah {
+    width:30%;
+    align-self: flex-end;
+    margin-right: 10%;
+  }
