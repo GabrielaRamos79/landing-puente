@@ -32,6 +32,7 @@ import mas from './images/mas.png'
 import linea from './images/Linea.png'
 import estrella from './images/estrella.png'
 import gepopup from './images/gepopup.png'
+import textura2 from './images/textura2.png'
 import 'bootstrap/dist/css/bootstrap.min.css'
 
 function App() {
@@ -298,6 +299,89 @@ function App() {
           )}
         </div>
       </section>
+      {/* Sección de Carrusel */}
+      <section className="carousel-section">
+        {/* Primera fila - Movimiento de derecha a izquierda */}
+        <div className="carousel-row">
+          <div className="carousel-content move-right">
+            <span>social media</span>
+            <img src={estrella} alt="star icon" className="icon-star" />
+            <span>fotografía</span>
+            <img src={linea} alt="line icon" className="icon-line" />
+            <span>packaging</span>
+            <img src={estrella} alt="star icon" className="icon-star" />
+            <span>redacción creativa</span>
+            <img src={linea} alt="line icon" className="icon-line" />
+            <span>social media</span>
+            <img src={estrella} alt="star icon" className="icon-star" />
+            <span>fotografía</span>
+            <img src={linea} alt="line icon" className="icon-line" />
+            <span>packaging</span>
+            <img src={estrella} alt="star icon" className="icon-star" />
+            <span>redacción creativa</span>
+            <img src={linea} alt="line icon" className="icon-line" />
+          </div>
+        </div>
+
+        {/* Segunda fila - Movimiento de izquierda a derecha */}
+        <div className="carousel-row">
+          <div className="carousel-content move-left">
+            <span>consultoría estratégica</span>
+            <img src={estrella} alt="star icon" className="icon-star" />
+            <span>motion graphics</span>
+            <img src={linea} alt="line icon" className="icon-line" />
+            <span>desarrollo web</span>
+            <img src={estrella} alt="star icon" className="icon-star" />
+            <span>consultoría estratégica</span>
+            <img src={estrella} alt="star icon" className="icon-star" />
+            <span>motion graphics</span>
+            <img src={linea} alt="line icon" className="icon-line" />
+            <span>desarrollo web</span>
+            <img src={estrella} alt="star icon" className="icon-star" />
+          </div>
+        </div>
+      </section>
+      <div className='container contact-form my-5'>
+      <h1 className="form-title">VAMOS AL LÍO!</h1>
+      <form>
+        <div className="form-group">
+          <label htmlFor="name">Nombre</label>
+          <div className="input-wrapper">
+            <input type="text" id="name" className="form-input" />
+            {/* <img src={estrella} alt="star icon" className="star-icon" /> */}
+          </div>
+        </div>
+        <div className="form-group">
+          <label htmlFor="email">Mail</label>
+          <div className="input-wrapper">
+            <input type="email" id="email" className="form-input" />
+            <img src={estrella} alt="star icon" className="star-icon" />
+          </div>
+        </div>
+        <div className="form-group">
+          <label htmlFor="phone">Teléfono</label>
+          <div className="input-wrapper">
+            <input type="tel" id="phone" className="form-input" />
+            {/* <img src={estrella} alt="star icon" className="star-icon" /> */}
+          </div>
+        </div>
+        <div className="form-group">
+          <label htmlFor="message">Haznos un teaser sobre qué necesitas</label>
+          <textarea id="message" rows="4" className="form-input"></textarea>
+        </div>
+        <div className="form-group">
+          <h2>Ready para que tu marca empiece a petarlo?</h2>
+          <div className="send-wrapper">
+            <button type="submit" className="send-button">YASSSSSS!</button>
+            {/* <img src={sendIcon} alt="send icon" className="send-icon" /> */}
+          </div>
+        </div>
+        <div className="form-group terms">
+          <input type="checkbox" id="terms" />
+          <label htmlFor="terms">He leído y acepto la política de privacidad</label>
+        </div>
+      </form>
+      </div>
     </div>
   );
 }
