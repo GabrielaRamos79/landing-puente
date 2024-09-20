@@ -47,7 +47,7 @@ function ContactForm() {
         <div className="terms-wrapper">
           <input type="checkbox" id="terms" />
           <label htmlFor="terms">
-            He leído y acepto la{" "}
+            He leído y acepto la
             <a href="https://www.elpuentepublicidad.com/politica-de-privacidad">
               política de privacidad
             </a>

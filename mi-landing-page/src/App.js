@@ -7,44 +7,46 @@ import Contact from './components/Contact/Contact';
 import ContactForm from './components/ContactForm/ContactForm';
 import Project from './components/Project/Project';
 import Services from './components/Services/Services';
+import Carousel from "./components/Carousel/Carousel";
 
-import logo from "./images/details/gif2.png";
-import puente from "./images/details/logopuente.png";
-import yeah from "./images/details/yeah.png";
-import hacemos from "./images/curvy/quehacemos.png";
-import marca from "./images/curvy/marca.png";
-import digital from "./images/curvy/digital.png";
-import media from "./images/curvy/media.png";
-import branding from "./images/curvy/branding.png";
-import web from "./images/curvy/web.png";
-import audiovisual from "./images/curvy/audiovisual.png";
-import alotrolado from "./images/curvy/alotrolado.png";
-import flechaizq from "./images/details/flechaizq.png";
-import LesRoches from "./images/logos/LesRoches.png";
-import Luxudise from "./images/logos/Luxudise.png";
-import Malaga from "./images/logos/Malaga.png";
-import Porshe from "./images/logos/Porsche.png";
-import Qipro from "./images/logos/Qipro.png";
-import Supermex from "./images/logos/Supermex.png";
-import Mediamaraton from "./images/logos/Mediamaraton.png";
-import Alma from "./images/logos/Alma.png";
-import Alabardero from "./images/logos/Alabardero.png";
-import Segurestil from "./images/logos/Segurestil.png";
-import gepro from "./images/proyectos/gepro.png";
-import supermexpro from "./images/proyectos/supermexpro.png";
-import montosapro from "./images/proyectos/montosapro.png";
-import lesrochespro from "./images/proyectos/lesrochespro.png";
-import almapro from "./images/proyectos/almapro.png";
-import porshepro from "./images/proyectos/porshepro.png";
-import mas from "./images/details/mas.png";
-import linea from "./images/details/Linea.png";
-import estrella from "./images/details/estrella.png";
-import gepopup from "./images/proyectos/gepopup.png";
-import textura2 from "./images/details/textura2.png";
-import flecha from "./images/details/Flecha.png";
-import salpicadoazul from "./images/details/salpicadoazul.png";
+// import logo from "./images/details/gif2.png";
+// import puente from "./images/details/logopuente.png";
+// import yeah from "./images/details/yeah.png";
+// import hacemos from "./images/curvy/quehacemos.png";
+// import marca from "./images/curvy/marca.png";
+// import digital from "./images/curvy/digital.png";
+// import media from "./images/curvy/media.png";
+// import branding from "./images/curvy/branding.png";
+// import web from "./images/curvy/web.png";
+// import audiovisual from "./images/curvy/audiovisual.png";
+// import alotrolado from "./images/curvy/alotrolado.png";
+// import flechaizq from "./images/details/flechaizq.png";
+// import LesRoches from "./images/logos/LesRoches.png";
+// import Luxudise from "./images/logos/Luxudise.png";
+// import Malaga from "./images/logos/Malaga.png";
+// import Porshe from "./images/logos/Porsche.png";
+// import Qipro from "./images/logos/Qipro.png";
+// import Supermex from "./images/logos/Supermex.png";
+// import Mediamaraton from "./images/logos/Mediamaraton.png";
+// import Alma from "./images/logos/Alma.png";
+// import Alabardero from "./images/logos/Alabardero.png";
+// import Segurestil from "./images/logos/Segurestil.png";
+// import gepro from "./images/proyectos/gepro.png";
+// import supermexpro from "./images/proyectos/supermexpro.png";
+// import montosapro from "./images/proyectos/montosapro.png";
+// import lesrochespro from "./images/proyectos/lesrochespro.png";
+// import almapro from "./images/proyectos/almapro.png";
+// import porshepro from "./images/proyectos/porshepro.png";
+// import mas from "./images/details/mas.png";
+// import linea from "./images/details/Linea.png";
+// import estrella from "./images/details/estrella.png";
+// import gepopup from "./images/proyectos/gepopup.png";
+// import textura2 from "./images/details/textura2.png";
+// import flecha from "./images/details/Flecha.png";
+// import salpicadoazul from "./images/details/salpicadoazul.png";
 import "bootstrap/dist/css/bootstrap.min.css";
-import { Carousel } from "bootstrap";
+// import { Carousel } from "bootstrap";
+// import { Carousel } from "bootstrap";
 
 function App() {
   // const [showPopup, setShowPopup] = useState(false);
@@ -63,12 +65,16 @@ function App() {
     <div className="App">
       <Header />
       <Services />
-      <ContactForm />
-      <Footer />
-      <Contact />
       <Client />
-      <Proyectos />
+      <Project />
       <Carousel />
+      <ContactForm />
+      <Contact />
+      <Footer />
+      
+      
+      
+      
     </div>
     // <div className="container my-5">
     //   <header className="App-header text-center">

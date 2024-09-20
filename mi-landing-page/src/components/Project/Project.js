@@ -23,6 +23,7 @@ function Project() {
     setCurrentImage(null);
   };
   return (
+    <div className="container my-5">
     <section className="projects-section mt-5">
       <div className="container">
         {/* Título de la sección */}
@@ -134,6 +135,7 @@ function Project() {
         )}
       </div>
     </section>
+    </div>
   );
 }
 

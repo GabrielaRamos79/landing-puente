@@ -3,6 +3,7 @@ import "./Contact.css";
 
 function Contact() {
   return (
+    <div className="container my-5">
     <div className="contact-section">
       <h1 className="big-title">¿TE ATREVES A CRUZAR?</h1>
       <div className="contact-info">
@@ -15,6 +16,7 @@ function Contact() {
           <p>6 Edificio Ibiza, oficina 4 Málaga</p>
         </div>
       </div>
+    </div>
     </div>
   );
 }

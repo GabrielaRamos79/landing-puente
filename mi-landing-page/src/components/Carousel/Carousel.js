@@ -5,6 +5,7 @@ import estrella from "../../images/details/estrella.png";
 
 function Carousel() {
   return (
+    <div className="container my-5">
     <section className="carousel-section">
       {/* Primera fila - Movimiento de derecha a izquierda */}
       <div className="carousel-row">
@@ -46,6 +47,7 @@ function Carousel() {
         </div>
       </div>
     </section>
+    </div>
   );
 }
 

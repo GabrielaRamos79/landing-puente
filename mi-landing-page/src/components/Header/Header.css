@@ -31,7 +31,7 @@
     position: relative;
     display: inline-block;
     font-weight: bold; /* O el estilo que quieras darle al texto */
-    background-image: url('./images/Linea.png'); /* Ruta de la imagen */
+    background-image: url('../../images/details/Linea.png'); /* Ruta de la imagen */
     background-position: bottom;
     background-repeat: no-repeat;
     background-size: contain;
