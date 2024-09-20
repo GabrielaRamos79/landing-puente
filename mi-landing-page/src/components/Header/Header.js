@@ -1,32 +1,32 @@
 import React from "react";
 import "./Header.css";
-import logo from "../../images/details/gif2.png";
-import puente from "../../images/details/logopuente.png";
+import spin from "../../images/details/gif2.png";
+import puente from "../../images/details/solopuente.png";
 import yeah from "../../images/details/yeah.png";
+import acento from "../../images/details/Acento.png"
 // import linea from '../../images/details/Linea.png'
 
 function Header() {
   return (
     <div className="container my-5">
-      <header className="App-header text-center">
+      <header className="App-header">
         <div className="row">
-          <div className="col-md-6 text-start">
-            <h1 className="highlight-text mb-4">
-              <span className="rayo"></span>
-              Somos
-              <img
-                src={puente}
-                className="puente-logo mb-2"
-                alt="puente-logo"
-              />
+          <div>
+            <h1 className="highlight-text">
+              <span className="acento-container">
+                <img src={acento} alt="Acento" className="acento-img" />
+                S
+              </span>
+              omos            
             </h1>
+            <img src={puente} className="puente-logo" alt="puente-logo" />
           </div>
-          <div className="col-md-6 d-flex justify-content-center align-items-center">
-            <img src={logo} className="App-logo" alt="logo" />
+          <div>
+            <img src={spin} className="spin-logo" alt="logo" />
           </div>
         </div>
-        <div className="row mt-2">
-          <div className="col-md-12 text-end d-flex justify-content-end align-items-start">
+        <div>
+          <div>
             <h2 className="fw-bold">
               tu agencia
               <br />
@@ -36,30 +36,27 @@ function Header() {
           </div>
         </div>
         <div className="row mt-4">
-          <div className="col-md9 text-start d-flex flex-column justify-content-center">
+          {/* Columna izquierda para el texto */}
+          <div className="col-md-8">
+          <div className="punch">
             <p>
               Hacemos las cosas diferentes desde el otro lado
               <br />
               del branding: publicidad, branded content, diseño
-              <br />y estrategia, ¡con un  
+              <br />y estrategia, ¡con un
               <span className="highlight">
-                <b> punch de flow creativo</b>
+                 <b>  punch de flow creativo</b>
               </span>
-              !<br />
-            </p>
-            <p>
+              !<br /> <br />
               Si quieres revolucionar tu marca y llevarla hasta el<br></br>
               éxito, es el momento de cruzar al otro lado.
-              <br />
-            </p>
-            <p>¿Quieres saber qué podemos hacer por ti?</p>
-            <div className="col-md-4 d-flex"></div>
-            <a
-              className="App-link"
-              href="https://elpuentepublicidad.com"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
+              <br /> <br />
+            ¿Quieres saber qué podemos hacer por ti?</p>
+            </div>
+            </div>
+             {/* Columna derecha para el botón */}
+          <div className="col-md-4 d-flex align-items-center">
+            <a className="App-link" href="#contactForm">
               ESCRÍBENOS
             </a>
           </div>

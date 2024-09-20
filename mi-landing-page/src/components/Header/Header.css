@@ -1,145 +1,114 @@
-.App-logo {
-    width: 100%;
-    max-width: 300px;
-    margin-top: 50%;
-    margin-bottom: 20px;
-    margin-right: auto;
-    /* height: 40vmin;
-    pointer-events: none; */
-  }
-  
-  .highlight-text {
-    font-family: 'Inter_18pt-ExtraLight', sans-serif;
-    /* margin-right: 15px;
-    margin-top: 50px; */
-    position: relative;
-    display: inline-block;
-  }
-  
-  .rayo {
-    position: absolute;
-    top: 34px;
-    left: -20px;
-    width: 8px;
-    height: 25px;
-    background-color: #061599;
-    border-radius: 50%;
-    transform: rotate(70deg);
-  }
-  
-  .highlight {
-    position: relative;
-    display: inline-block;
-    font-weight: bold; /* O el estilo que quieras darle al texto */
-    background-image: url('../../images/details/Linea.png'); /* Ruta de la imagen */
-    background-position: bottom;
-    background-repeat: no-repeat;
-    background-size: contain;
-    padding-bottom: 5px; /* Espacio para la imagen debajo del texto */
-  }
-  
-  .highlight-text::before {
-    content: '';
-    position: absolute;
-    top: 20px;
-    left: -24px;
-    width: 8px;
-    height: 25px;
-    background-color: #061599;
-    border-radius: 50%;
-    /* margin-right: 15px; */
-    transform: rotate(110deg); /* Ajusta el ángulo según sea necesario */
-  }
-  
-  /* Pseudo-elemento para el segundo "rayo" */
-  .highlight-text::after {
-    content: '';
-    position: absolute;
-    top: 5px;
-    left: -20px;
-    width: 8px;
-    height: 25px;
-    background-color: #061599;
-    border-radius: 50%;
-    transform: rotate(140deg); /* Ajusta el ángulo */
-  }
-  
-  /* Elemento base */
-  /* .highlight-text span {
-    position: absolute;
-    top: 15px;
-    left: 50px;
-    width: 8px;
-    height: 25px;
-    background-color: blue;
-    border-radius: 50%;
-    transform: rotate(0deg); 
-  } */
-  
-  .puente-logo {
-    height: 60px; /* Tamaño del logo de "puente" */
-    vertical-align:middle;
-    margin-top: 60px;
-    margin-left: 15px;
-  }
-  
-  /* @media (prefers-reduced-motion: no-preference) {
+.spin-logo {
+  width: 100%;
+  max-width: 250px;
+  margin-top: 5%;
+  margin-bottom: 20px;
+}
+
+img.spin-logo {
+  margin-left: 40%;
+}
+
+.highlight-text {
+  font-family: "Inter_18pt-Light", sans-serif;
+  font-size: 50px;
+  margin-left: 5%;
+  margin-top: 5%;
+  position: relative;
+  display: inline-block;
+}
+
+.acento-container {
+  position: relative;
+  display: inline-block;
+}
+
+.acento-img {
+  position: absolute;
+  top: -30px; /* Ajusta para posicionar la imagen */
+  left: -30px; /* Ajusta según la imagen */
+  width: 50px; /* Ajusta el tamaño según sea necesario */
+  z-index: 0; /* Coloca la imagen detrás de la letra */
+}
+
+.puente-logo {
+  height: 80px; /* Tamaño del logo de "puente" */
+  vertical-align: baseline;
+}
+
+img.puente-logo {
+  margin-left: 2%;
+  margin-top: 0%;
+}
+
+.App-header {
+  background-color: #e9eaf0;
+}
+
+.fw-bold {
+  font-family: "Inter_18pt-ExtraLight", sans-serif;
+  font-size: 50px;
+  margin-top: -5%;
+  margin-right: 18%;
+  text-align: right;
+}
+
+.punch {
+  display: flex;
+  justify-content: space-between; /* Para alinear el texto a la izquierda y el botón a la derecha */
+  align-items: flex-start;/* Ajustar aquí para subir el botón */
+}
+
+.punch p {
+  font-family: "Inter_18-Medium", sans-serif;
+  font-size: 1rem;
+  text-align: left;
+  margin-left: 5%;
+  margin-top: 5%;
+  width: 65%; /* Ajuste del ancho para evitar que el botón afecte el flujo del texto */
+}
+
+.App-link {
+  background-color: #c9ea50;
+  color: #161719;
+  font-family: 'AghartiVF', sans-serif;
+  font-size: 30px;
+  font-weight: lighter;
+  box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+  text-decoration: none;
+  text-align: center;
+  padding: 0px 10px;
+  margin-right: 0%;
+  margin-top: -20px; /* Mueve el botón hacia arriba */
+  height: fit-content;
+  letter-spacing: -0.5px;
+  transform: scaleY(1.2);
+}
+
+.yeah {
+  width: 40%;
+  /* align-self: flex-end; */
+  margin-left: 40%;
+  margin-top: -6%;
+}
+
+.highlight {
+  position: relative;
+  display: inline-block;
+  font-weight: bold; /* O el estilo que quieras darle al texto */
+  background-image: url("../../images/details/Linea.png"); /* Ruta de la imagen */
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: contain;
+  padding-bottom: 5px; /* Espacio para la imagen debajo del texto */
+}
+
+/* @media (prefers-reduced-motion: no-preference) {
     .App-logo {
       animation: App-logo-spin infinite 20s linear;
     }
   } */
-  
-  .App-header {
-    background-color: #e9eaf0;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content:space-between;
-    font-size: calc(10px + 2vmin);
-    color: black;
-  }
-  
-  .App-header h1{
-    font-family: 'Inter_18pt-ExtraLight', sans-serif;
-    font-size: 2.5rem;
-    /* align-self: flex-start; */
-  }
-  
-  .fw-bold{
-    font-family: 'Inter_18pt-ExtraLight', sans-serif;
-    font-size: 2rem;
-    margin-top: 0;
-    margin-right: 0%;
-    align-self: flex-end;
-    text-align: right;
-  }
-  
-  /* .fw-bold{
+
+/* .fw-bold{
     margin-top: 50%;
   } */
-  
-  .App-header p{
-    font-family: 'Agharti', sans-serif;
-    font-size: 1rem;
-    /* align-self: flex-start; */
-    /* text-align: left; */
-  }
-  .App-link {
-    background-color: #c9ea50;
-    color: #161719;
-    font-family: 'AghartiCondensedSemiLight', sans-serif;
-    font-size: 50px;
-    font-weight:lighter;
-    box-shadow: 1px 1px 2px rgba(0,0,0,0.1);
-    text-decoration:none;
-    align-self:flex-end;
-    letter-spacing: -0.5px;
-    transform: scaleY(1.2);
-  }
-  
-  .yeah {
-    width:30%;
-    align-self: flex-end;
-    margin-right: 10%;
-  }
