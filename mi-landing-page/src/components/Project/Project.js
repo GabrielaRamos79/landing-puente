@@ -1,13 +1,13 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Project.css";
-import gepro from "./images/proyectos/gepro.png";
-import supermexpro from "./images/proyectos/supermexpro.png";
-import montosapro from "./images/proyectos/montosapro.png";
-import lesrochespro from "./images/proyectos/lesrochespro.png";
-import almapro from "./images/proyectos/almapro.png";
-import porshepro from "./images/proyectos/porshepro.png";
-import mas from "./images/mas.png";
-import gepopup from "./images/gepopup.png";
+import gepro from "../../images/proyectos/gepro.png";
+import supermexpro from "../../images/proyectos/supermexpro.png";
+import montosapro from "../../images/proyectos/montosapro.png";
+import lesrochespro from "../../images/proyectos/lesrochespro.png";
+import almapro from "../../images/proyectos/almapro.png";
+import porshepro from "../../images/proyectos/porshepro.png";
+import mas from "../../images/details/mas.png";
+import gepopup from "../../images/proyectos/gepopup.png";
 
 function Project() {
   const [showPopup, setShowPopup] = useState(false);

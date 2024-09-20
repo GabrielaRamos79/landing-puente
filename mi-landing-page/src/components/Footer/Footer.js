@@ -1,6 +1,7 @@
 import React from "react";
 import './Footer.css';
-import puente from './images/logopuente.png'
+import puente from '../../images/details/logopuente.png'
+import salpicadoazul from '../../images/details/salpicadoazul.png'
 
 function Footer(){
     return (

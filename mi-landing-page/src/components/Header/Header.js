@@ -1,8 +1,9 @@
 import React from "react";
 import "./Header.css";
-import logo from "./images/gif2.png";
-import puente from "./images/logopuente.png";
-import yeah from "./images/yeah.png";
+import logo from "../../images/details/gif2.png";
+import puente from "../../images/details/logopuente.png";
+import yeah from "../../images/details/yeah.png";
+import linea from '../../images/details/Linea.png'
 
 function Header() {
   return (
@@ -40,7 +41,7 @@ function Header() {
               Hacemos las cosas diferentes desde el otro lado
               <br />
               del branding: publicidad, branded content, diseño
-              <br />y estrategia, ¡con un{" "}
+              <br />y estrategia, ¡con un{linea}
               <span className="highlight">
                 <b>punch de flow creativo</b>
               </span>

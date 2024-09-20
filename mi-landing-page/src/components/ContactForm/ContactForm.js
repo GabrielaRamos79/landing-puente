@@ -1,12 +1,12 @@
 import React from "react";
 import "./ContactForm.css";
-import estrella from "./images/estrella.png";
-import textura2 from "./images/textura2.png";
-import flecha from "./images/Flecha.png";
+import estrella from "../../images/details/estrella.png";
+// import textura2 from "../../images/details/textura2.png";
+import flecha from "../../images/details/Flecha.png";
 
 function ContactForm() {
   return (
-    <div className="container contact-form my-5">
+    <div id="contactForm" className="container contact-form my-5">
       <h1 className="form-title">VAMOS AL LÍO!</h1>
       <form>
         <div className="form-group">

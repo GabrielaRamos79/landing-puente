@@ -1,15 +1,15 @@
 import React from "react";
 import "./Client.css";
-import LesRoches from "./images/logos/LesRoches.png";
-import Luxudise from "./images/logos/Luxudise.png";
-import Malaga from "./images/logos/Malaga.png";
-import Porshe from "./images/logos/Porsche.png";
-import Qipro from "./images/logos/Qipro.png";
-import Supermex from "./images/logos/Supermex.png";
-import Mediamaraton from "./images/logos/Mediamaraton.png";
-import Alma from "./images/logos/Alma.png";
-import Alabardero from "./images/logos/Alabardero.png";
-import Segurestil from "./images/logos/Segurestil.png";
+import LesRoches from "../../images/logos/LesRoches.png";
+import Luxudise from "../../images/logos/Luxudise.png";
+import Malaga from "../../images/logos/Malaga.png";
+import Porshe from "../../images/logos/Porsche.png";
+import Qipro from "../../images/logos/Qipro.png";
+import Supermex from "../../images/logos/Supermex.png";
+import Mediamaraton from "../../images/logos/Mediamaraton.png";
+import Alma from "../../images/logos/Alma.png";
+import Alabardero from "../../images/logos/Alabardero.png";
+import Segurestil from "../../images/logos/Segurestil.png";
 
 function Client() {
   return (
@@ -79,7 +79,7 @@ function Client() {
         <div className="row mt-5">
           <div className="col text-center">
             <p className="quieres">¿Quieres ser una de ellas?</p>
-            <a href="#" className="btn btn-primary btn-lg btn-yes">
+            <a href="#contactForm" className="btn btn-primary btn-lg btn-yes">
               YES!
             </a>
           </div>

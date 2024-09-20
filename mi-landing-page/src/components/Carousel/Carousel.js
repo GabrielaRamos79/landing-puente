@@ -1,7 +1,7 @@
 import React from "react";
 import "./Carousel.css";
-import linea from "./Linea.png";
-import estrella from "./estrella.png";
+import linea from "../../images/details/Linea.png";
+import estrella from "../../images/details/estrella.png";
 
 function Carousel() {
   return (

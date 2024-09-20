@@ -1,14 +1,14 @@
 import React from "react";
 import "./Services.css";
-import hacemos from "./images/curvy/quehacemos.png";
-import marca from "./images/curvy/marca.png";
-import digital from "./images/curvy/digital.png";
-import media from "./images/curvy/media.png";
-import branding from "./images/curvy/branding.png";
-import web from "./images/curvy/web.png";
-import audiovisual from "./images/curvy/audiovisual.png";
-import alotrolado from "./images/curvy/alotrolado.png";
-import flechaizq from "./images/flechaizq.png";
+import hacemos from "../../images/curvy/quehacemos.png";
+import marca from "../../images/curvy/marca.png";
+import digital from "../../images/curvy/digital.png";
+import media from "../../images/curvy/media.png";
+import branding from "../../images/curvy/branding.png";
+import web from "../../images/curvy/web.png";
+import audiovisual from "../../images/curvy/audiovisual.png";
+import alotrolado from "../../images/curvy/alotrolado.png";
+import flechaizq from "../../images/details/flechaizq.png";
 
 function Services() {
   return (
