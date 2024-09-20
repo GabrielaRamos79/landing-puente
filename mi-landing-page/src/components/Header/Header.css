@@ -49,7 +49,7 @@ img.puente-logo {
   font-family: "Inter_18pt-ExtraLight", sans-serif;
   font-size: 50px;
   margin-top: -5%;
-  margin-right: 18%;
+  margin-right: calc(20% - 60px); /* Ajuste dinámico con calc() */
   text-align: right;
 }
 
