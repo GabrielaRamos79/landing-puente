@@ -5,53 +5,107 @@
     margin-top: -15%;
   }
    */
-  .services-section{
-    position: relative;
-    z-index: 1;
-    margin-top: 0% !important;
-    background-color: #e9eaf0;
-    padding-top: 0 !important;
-  }
-  
-  .services-section h3 {
-    font-family: 'AghartiCondensedSemiLight', sans-serif;
-    font-size: 3.5rem;
-    font-weight:lighter;
-    margin-top: 20%;
-    margin-left: 10%;
-    margin-bottom: 15px;
-    color: #161719;
-  }
-  
-  .services-section ul {
-    list-style-type: none;
-    padding-left: 0;
-    margin-left: 10%;
-  }
-  
-  .services-section li {
-    font-family: 'Inter_18pt-SemiBold', sans-serif;
-    font-size: 1rem;
-    margin-bottom: 10px;
-  }
-  
-  .curvy{
-    width: 14%;
-  }
-  
-  .cruzado{
-    font-family: 'AghartiVF', sans-serif;
-    font-size: 5.5rem;
-    margin-top: 10%;
-    margin-left: 5%;
-  }
-  .otrolado{
-    width: 50%;
-    margin-top: 3%;
-    margin-left: 5%;
-  }
-  .telita{
-    font-family: 'Hurtmore', sans-serif;
-    font-size: 1.5rem;
-    margin-left: 5%;
-  }
+.services-section {
+  position: relative;
+  z-index: 1;
+  margin-top: 0% !important;
+  background-color: #e9eaf0;
+  padding-top: 0 !important;
+}
+
+.services-section h3 {
+  font-family: "AghartiCondensedSemiLight", sans-serif;
+  font-size: 3.5rem;
+  font-weight: lighter;
+  margin-top: 20%;
+  margin-left: 10%;
+  /* margin-bottom: 15px; */
+  color: #161719;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.services-section h3 img {
+  /*width: 100px;  Establecer un tamaño fijo para todas las imágenes */
+  /*height: 43px;  Mantener la proporción de la imagen */
+  /*margin-left: 10px;  Espacio entre el texto y la imagen */
+   vertical-align: middle; /*Asegura que esté alineado correctamente con el texto*/
+}
+
+.services-section ul {
+  list-style-type: none;
+  padding-left: 0;
+  margin-left: 10%;
+}
+
+.services-section li {
+  font-family: "Inter_18pt-SemiBold", sans-serif;
+  font-size: 12.6px;
+  margin-bottom: 3px;
+}
+
+.curvy {
+  /*max-width: 100px;  Máximo tamaño para las imágenes */
+  height: auto; /* Mantener la proporción original */
+}
+
+.curvy-marca {
+  width: 65px;
+  height: 45px;
+  margin-left:1.2%;
+}
+
+.curvy-digital {
+  width: 60px;
+  height: 45px;
+  margin-left:1.2%;
+}
+
+.curvy-media {
+  width: 45px;
+  height: 45px;
+  margin-left:1.2%;
+}
+
+.second-line {
+  margin-top: -30% !important; /* Reduce este valor para acercar las filas */
+  padding-top: 0 !important;
+}
+
+.curvy-branding {
+  width: 70px;
+  height: 45px;
+  margin-left:0%;
+  margin-top: 3.2%;
+  margin-bottom: 3%;
+}
+
+.curvy-web {
+  width: 30px;
+  height: 45px;
+  margin-left:1.2%;
+}
+
+.curvy-audiovisual {
+  width: 90px;
+  height: 45px;
+  margin-left:1.2%;
+}
+
+.cruzado {
+  font-family: "AghartiVF", sans-serif;
+  font-size: 74px;
+  margin-top: 10%;
+  margin-left: 5%;
+}
+.otrolado {
+  width: 50%;
+  margin-top: 3%;
+  margin-left: 5%;
+}
+.telita {
+  font-family: "Hurtmore", sans-serif;
+  font-size: 1.5rem;
+  margin-left: 5%;
+}
