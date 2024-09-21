@@ -1,9 +1,10 @@
 import React from "react";
 import "./Header.css";
 import spin from "../../images/details/gif2.png";
-import puente from "../../images/details/solopuente.png";
+import puente from "../../images/details/logopuente_recortado.png";
 import yeah from "../../images/details/yeah.png";
-import acento from "../../images/details/Acento.png"
+import hacemos from "../../images/curvy/quehacemos.png";
+import acento from "../../images/details/Acento.png";
 // import linea from '../../images/details/Linea.png'
 
 function Header() {
@@ -14,10 +15,9 @@ function Header() {
           <div>
             <h1 className="highlight-text">
               <span className="acento-container">
-                <img src={acento} alt="Acento" className="acento-img" />
-                S
+                <img src={acento} alt="Acento" className="acento-img" />S
               </span>
-              omos            
+              omos
             </h1>
             <img src={puente} className="puente-logo" alt="puente-logo" />
           </div>
@@ -38,30 +38,38 @@ function Header() {
         <div className="row mt-4">
           {/* Columna izquierda para el texto */}
           <div className="col-md-8">
-          <div className="punch">
-            <p>
-              Hacemos las cosas diferentes desde el otro lado
-              <br />
-              del branding: publicidad, branded content, diseño
-              <br />y estrategia, ¡con un
-              <span className="highlight">
-                 <b>  punch de flow creativo</b>
-              </span>
-              !<br /> <br />
-              Si quieres revolucionar tu marca y llevarla hasta el<br></br>
-              éxito, es el momento de cruzar al otro lado.
-              <br /> <br />
-            ¿Quieres saber qué podemos hacer por ti?</p>
+            <div className="punch">
+              <p>
+                Hacemos las cosas diferentes desde el otro lado
+                <br />
+                del branding: publicidad, branded content, diseño
+                <br />y estrategia, ¡con un
+                <span className="highlight">
+                  <b> punch de flow creativo</b>
+                </span>
+                !<br /> <br />
+                Si quieres revolucionar tu marca y llevarla hasta el<br></br>
+                éxito, es el momento de cruzar al otro lado.
+                <br /> <br />
+                ¿Quieres saber qué podemos hacer por ti?
+              </p>
             </div>
-            </div>
-             {/* Columna derecha para el botón */}
+          </div>
+          {/* Columna derecha para el botón */}
           <div className="col-md-4 d-flex align-items-center">
             <a className="App-link" href="#contactForm">
               ESCRÍBENOS
             </a>
           </div>
         </div>
-        <img src={yeah} className="yeah" alt="ouh-yeah" />
+        <div className="header-grid">
+          <div className="left-column">
+            <img src={hacemos} className="hacemos" alt="que-hacemos" />
+          </div>
+          <div className="right-column">
+            <img src={yeah} className="yeah" alt="ouh-yeah" />
+          </div>
+        </div>
       </header>
     </div>
   );

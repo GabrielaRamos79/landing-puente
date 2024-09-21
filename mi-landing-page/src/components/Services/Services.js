@@ -1,6 +1,6 @@
 import React from "react";
 import "./Services.css";
-import hacemos from "../../images/curvy/quehacemos.png";
+// import hacemos from "../../images/curvy/quehacemos.png";
 import marca from "../../images/curvy/marca.png";
 import digital from "../../images/curvy/digital.png";
 import media from "../../images/curvy/media.png";
@@ -14,7 +14,7 @@ function Services() {
   return (
     <div className="container my-5">
       <section className="services-section mt-5">
-        <img src={hacemos} className="hacemos" alt="que-hacemos" />
+        {/* <img src={hacemos} className="hacemos" alt="que-hacemos" /> */}
         <div className="container">
           <div className="row">
             {/* Primera fila */}

@@ -37,12 +37,17 @@ img.spin-logo {
 }
 
 img.puente-logo {
-  margin-left: 2%;
+  margin-left: 1.5%;
   margin-top: 0%;
+  vertical-align: bottom;
 }
 
 .App-header {
   background-color: #e9eaf0;
+  padding-bottom: 0 !important;
+  margin-bottom: 0 !important;
+  /* position: relative;
+  z-index: 1; */
 }
 
 .fw-bold {
@@ -64,7 +69,7 @@ img.puente-logo {
   font-size: 1rem;
   text-align: left;
   margin-left: 5%;
-  margin-top: 5%;
+  margin-top: 0%;
   width: 65%; /* Ajuste del ancho para evitar que el botón afecte el flujo del texto */
 }
 
@@ -79,17 +84,19 @@ img.puente-logo {
   text-align: center;
   padding: 0px 10px;
   margin-right: 0%;
-  margin-top: -20px; /* Mueve el botón hacia arriba */
+  margin-left: 21%;
+  margin-top: -30%; /* Mueve el botón hacia arriba */
   height: fit-content;
   letter-spacing: -0.5px;
   transform: scaleY(1.2);
 }
 
 .yeah {
-  width: 40%;
+  width: 100%;
   /* align-self: flex-end; */
-  margin-left: 40%;
-  margin-top: -6%;
+  /* margin-left: 40%; */
+  margin-top: 8%;
+  margin-bottom:0%;
 }
 
 .highlight {
@@ -101,6 +108,30 @@ img.puente-logo {
   background-repeat: no-repeat;
   background-size: contain;
   padding-bottom: 5px; /* Espacio para la imagen debajo del texto */
+}
+
+.header-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* 2 columnas iguales */
+  align-items: center; /* Alinea verticalmente */
+  margin-top: -10%; /* Ajusta según lo necesario */
+  margin-bottom: -3.9%;
+}
+
+.left-column {
+  text-align: left;
+  margin-top: 40%;
+  margin-left: -4%; /* Ajusta la posición de la imagen del texto */
+}
+
+.right-column {
+  text-align: right;
+  margin-right: 30%; /* Ajusta la posición de la imagen del lado derecho */
+}
+
+.hacemos {
+  width: 50%; /* Ajusta el tamaño de la imagen "QUE HACEMOS" */
+  max-width: 400px; /* Ajusta según lo que necesites */
 }
 
 /* @media (prefers-reduced-motion: no-preference) {
