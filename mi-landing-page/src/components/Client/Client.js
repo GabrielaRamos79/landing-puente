@@ -16,9 +16,9 @@ function Client() {
     <div className="container my-5">
       <section className="section-clients mt-5">
         <div className="container text-center">
-          <div className="row d-flex justify-content-between mt-5">
+          <div className="row d-flex justify-content-around mt-5">
             {/* Primera fila de logos */}
-            <div className="col-md-2 col-sm-6 mb-4">
+            <div className="client-row col-md-2 col-sm-6 mb-4">
               <img
                 src={LesRoches}
                 alt="Les Roches"
@@ -43,16 +43,16 @@ function Client() {
               <img
                 src={Porshe}
                 alt="Porshe"
-                className="img-fluid client-logo"
+                className="porshe-client img-fluid client-logo"
               />
             </div>
             <div className="col-md-2 col-sm-6 mb-4">
               <img src={Qipro} alt="Qipro" className="img-fluid client-logo" />
             </div>
           </div>
-          <div className="row d-flex justify-content-between mt-5">
+          <div className="row d-flex justify-content-around mt-5">
             {/* Segunda fila de logos */}
-            <div className="col-md-2 col-sm-6 mb-4">
+            <div className="client-row col-md-2 col-sm-6 mb-4">
               <img
                 src={Supermex}
                 alt="Super Mex"
@@ -73,7 +73,7 @@ function Client() {
               <img
                 src={Alabardero}
                 alt="Alarbadero"
-                className="img-fluid client-logo"
+                className="alarbadero-client img-fluid client-logo"
               />
             </div>
             <div className="col-md-2 col-sm-6 mb-4">
@@ -86,9 +86,9 @@ function Client() {
           </div>
           {/* Texto final con el botón */}
           <div className="row mt-5">
-            <div className="col text-center">
+            <div className="col text-center grid-container">
               <p className="quieres">¿Quieres ser una de ellas?</p>
-              <a href="#contactForm" className="btn btn-primary btn-lg btn-yes">
+              <a href="#contactForm" className="btn-yes">
                 YES!
               </a>
             </div>

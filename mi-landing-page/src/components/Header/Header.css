@@ -134,6 +134,27 @@ img.puente-logo {
   max-width: 400px; /* Ajusta según lo que necesites */
 }
 
+/* Para pantallas grandes */
+@media (min-width: 1024px) {
+  .header-grid {
+    margin-bottom: calc(-3.3% - 1.8vh);
+  }
+}
+
+/* Para pantallas medianas como laptops */
+@media (min-width: 768px) and (max-width: 1023px) {
+  .header-grid {
+    margin-bottom: calc(-3.9% - 0.8vh);
+  }
+}
+
+/* Para pantallas pequeñas como móviles */
+@media (max-width: 767px) {
+  .header-grid {
+    margin-bottom: calc(-3.9% - 0.5vh);
+  }
+}
+
 /* @media (prefers-reduced-motion: no-preference) {
     .App-logo {
       animation: App-logo-spin infinite 20s linear;

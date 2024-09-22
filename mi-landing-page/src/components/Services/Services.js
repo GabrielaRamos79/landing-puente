@@ -20,7 +20,8 @@ function Services() {
             {/* Primera fila */}
             <div className="col-md-4">
               <h3>
-                ESTRATEGIA DE <img src={marca} className="curvy curvy-marca" alt="marca" />
+                ESTRATEGIA DE{" "}
+                <img src={marca} className="curvy curvy-marca" alt="marca" />
               </h3>
               <ul>
                 <li>Consultoría estratégica de comunicación</li>
@@ -33,7 +34,12 @@ function Services() {
             </div>
             <div className="col-md-4">
               <h3>
-                ESTRATEGIA <img src={digital} className="curvy curvy-digital" alt="digital" />
+                ESTRATEGIA{" "}
+                <img
+                  src={digital}
+                  className="curvy curvy-digital"
+                  alt="digital"
+                />
               </h3>
               <ul>
                 <li>Search Engine Optimization (SEO)</li>
@@ -46,7 +52,8 @@ function Services() {
             </div>
             <div className="col-md-4">
               <h3>
-                SOCIAL <img src={media} className="curvy curvy-media" alt="media" />
+                SOCIAL{" "}
+                <img src={media} className="curvy curvy-media" alt="media" />
               </h3>
               <ul>
                 <li>Gestión de redes sociales</li>
@@ -61,7 +68,11 @@ function Services() {
             {/* Segunda fila */}
             <div className="col-md-4">
               <h3>
-                <img src={branding} className="curvy curvy-branding" alt="branding" />
+                <img
+                  src={branding}
+                  className="curvy curvy-branding"
+                  alt="branding"
+                />
               </h3>
               <ul>
                 <li>Identidad corporativa</li>
@@ -73,7 +84,8 @@ function Services() {
             </div>
             <div className="col-md-4">
               <h3>
-                DESARROLLO <img src={web} className="curvy curvy-web" alt="web" />
+                DESARROLLO{" "}
+                <img src={web} className="curvy curvy-web" alt="web" />
               </h3>
               <ul>
                 <li>Consultoría web</li>
@@ -86,7 +98,11 @@ function Services() {
             <div className="col-md-4">
               <h3>
                 PRODUCCION{" "}
-                <img src={audiovisual} className="curvy curvy-audiovisual" alt="audiovisual" />
+                <img
+                  src={audiovisual}
+                  className="curvy curvy-audiovisual"
+                  alt="audiovisual"
+                />
               </h3>
               <ul>
                 <li>Spot</li>
@@ -99,13 +115,17 @@ function Services() {
             </div>
           </div>
         </div>
-        <div className="col-md-9">
+        <div className="col-md-9 al-otro-lado-section">
           <h1 className="cruzado">MIRA QUIEN HA CRUZADO YA</h1>
-          <img src={alotrolado} className="otrolado" alt="alotrolado" />
-          <h3 className="telita">
-            TELITAAAA
-            <img src={flechaizq} className="flecha" alt="flecha" />
-          </h3>
+          <div className="content-container">
+            <div className="left-side">
+              <img src={alotrolado} className="otrolado" alt="alotrolado" />
+            </div>
+            <h2 className="telita">TELITAAAA</h2>
+            <div className="right-side">
+              <img src={flechaizq} className="flecha" alt="flecha" />
+            </div>
+          </div>
         </div>
       </section>
     </div>
