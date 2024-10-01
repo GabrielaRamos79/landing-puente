@@ -22,7 +22,7 @@ function ContactForm() {
   };
   return (
     <div id="contactForm" className="container custom-container my-5">
-      <h1 className="form-title">VAMOS AL LÍO!</h1>
+      <h1 className="form-title"> <br />VAMOS AL LÍO!</h1>
       <form ref={form} onSubmit={sendEmail}>
         <div className="form-group">
           <label htmlFor="name">Nombre</label>
@@ -47,17 +47,17 @@ function ContactForm() {
         </div>
         
         <div className="form-group2">
-          <label htmlFor="message">Haznos un teaser sobre qué necesitas</label>
+          <label htmlFor="message">Haznos un teaser sobre qué <br/> necesitas</label>
           <textarea id="message" name="message" rows="4" className="form-input"></textarea>
         </div>
         <div className="form-group2">
-          <h2>Ready para que tu marca empiece a petarlo?</h2>
+          <h2>Ready para que tu marca empiece <br/>a petarlo?</h2>
           <div className="send-wrapper">
             <button type="submit" className="send-button">
               YASSSSSS!
             </button>
             <img src={flecha} alt="arrow icon" className="arrow-icon" />
-            <span className="arrow-text">DALE PARA ENVIAR</span>
+            <span className="arrow-text">DALE<br/> PARA<br/> ENVIAR</span>
           </div>
         </div>
         <div className="terms-wrapper">

@@ -1,10 +1,11 @@
 .custom-container {
   padding-left: 0px !important;
   padding-right: 0px !important;
-  margin-left: auto;
-  margin-right: auto;
+  /* margin-left: auto; */
+  /* margin-right: auto; */
   margin-top: -35%;
   background-image:url('../../images/details/textura2.png');
+  /* width: calc(50%-20px); */
 }
 @media (max-width: 768px) {
   .container.custom-container {
@@ -13,7 +14,7 @@
   }
 }
 .contact-form {
-    background-image:url('../../images/details/textura2.png');
+    /* background-image:url('../../images/details/textura2.png') !important; */
     /* padding: 50px; */
     max-width: 800px;
     margin: -10%;
@@ -23,7 +24,7 @@
   
   .form-title {
     font-family: 'Hurtmore', sans-serif;
-    font-size: 2.5rem;
+    font-size: 4.5rem;
     margin-top: 4.3%;
     margin-bottom: 30px;
     text-align: left;
@@ -34,7 +35,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 30px;
+    margin-bottom: -10px;
     margin-left: 0;
     margin-right: 0;
     /* width: 100%; */
@@ -56,13 +57,13 @@
   }
   
   label {
-    font-size: 2.4rem;
-    font-family:'Inter_18pt-SemiBold' , sans-serif;
+    font-size: 3rem;
+    font-family:'Inter_18pt-semibold' , sans-serif;
     width: 30%;
     /* display: block; */
     /* margin-bottom: 10px; */
     text-align: left;
-    margin-left: 20%;
+    margin-left: 15%;
   }
   
   .input-wrapper {
@@ -77,8 +78,9 @@
     width: 100%;
     border: none;
     border-bottom: 3px solid black;
-    padding: 5px;
-    margin-right: 35%;
+    padding: 2px;
+    margin-right: 30%;
+    margin-left: 5%;
     font-size: 1.5rem;
     /* font-family: 'Inter_18pt-Regular', sans-serif; */
     background-color: transparent;
@@ -89,21 +91,34 @@
   }
   
   .star-icon {
-    width: 40px;
+    width: 50px;
     position: absolute;
-    right: 10px;
+    right: 30%;
+    bottom: 20%;
   }
   
+  .form-group2 label {
+    font-size: 3rem; /* Ajusta según lo necesario */
+    width: 100%; /* Puedes ajustar el ancho aquí si es necesario */
+    margin-left:15%; /* O ajusta el margen si es necesario */
+    /* margin-right: 15%; */
+  }
+
   textarea.form-input {
+    width: 68.2%;
     height: 100px;
+    margin-right: 35%;
+    margin-left: 15%;
   }
   
-  .form-group h2{
-    font-size: 2.5rem;
+  .form-group2 h2{
+    font-size: 3.2rem;
     font-weight: bold;
     font-family: 'Inter_18pt-Bold';
-    text-align: center;
+    text-align: left;
     margin-top: 30px;
+    margin-left: 15%;
+    padding-right: 10%;
   }
   
   .send-wrapper {
@@ -124,11 +139,11 @@
     background-color: #c9ea50;
     color: #161719;
     font-family: 'AghartiCondensed', sans-serif;
-    font-size: 1.5rem;
-    padding: 10px 20px;
+    font-size: 3.5rem;
+    padding: 0px 20px;
     border: none;
     cursor: pointer;
-    margin-right: 10%;
+    margin-right: 16%;
     text-align: center;
   }
   
@@ -143,11 +158,11 @@
   
   .arrow-text {
     position: absolute;
-    top: 40%;
-    right: 20%;
+    top: -50%;
+    right: 5%;
     font-family: 'Hurtmore', sans-serif;
     color: #061599;
-    font-size: 1rem;
+    font-size: 1.2rem;
     transform: rotate(-10deg);
   }
   
@@ -160,11 +175,15 @@
     display: flex;
     align-items: center;
     margin-top: 20px;
-    justify-content: center;
+    justify-content: flex-end;
   }
   
   .terms-wrapper input {
-    margin-right: 10px;
+    margin-right: -14.5%;
+    margin-bottom: 0.8%;
+    background-color: transparent;
+    border-color: red;
+    border-radius:0;
   }
   
   .terms-wrapper label {
