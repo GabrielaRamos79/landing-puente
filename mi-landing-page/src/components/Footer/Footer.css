@@ -1,74 +1,146 @@
 .footer-section {
-    background-color: #e9eaf0;
-    padding: 50px 20px;
-    text-align: center;
-    /* font-family: 'Inter_18pt-Regular', sans-serif; */
-    position: relative;
+  background-color: #e9eaf0;
+  padding: 50px 20px;
+  text-align: center;
+  /* font-family: 'Inter_18pt-Regular', sans-serif; */
+  position: relative;
+  margin-top: -4.6%;
+}
+
+/* Social links styling */
+.social-links {
+  display: flex;
+  justify-content: left;
+  gap: 50px;
+  font-family: "Inter_18pt-Bold";
+  font-size: 2.5rem;
+  font-weight: bolder;
+  margin-bottom: 30px;
+  margin-left: 5%;
+  position: relative;
+}
+
+.link-container {
+  position: relative;
+  display: inline-block;
+}
+
+.circle-border {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 150px; /* Tamaño del círculo */
+  height: 150px;
+  border: 5px solid #c9ea50; /* Color del borde */
+  border-radius: 10%;
+  background-color: transparent; /* Sin relleno */
+  transform: translate(-50%, -50%) scale(0);
+  transition: transform 0.5s ease;
+  z-index: -1;
+}
+
+.link-container:hover .circle-border {
+  transform: translate(-50%, -50%) scale(1); /* El círculo aparece en hover */
+}
+
+.social-links a {
+  text-decoration: none;
+  color: black;
+  position: relative;
+  padding: 5px;
+  z-index: 1;
+  transition: color 0.3s ease-in-out;
+}
+
+/* .social-links a:hover {
+  color: #c9ea50; 
+} */
+
+
+
+@keyframes traceCircle {
+  0% {
+    transform: translate3d(calc(-50% + 430px), calc(-50% + 523px), 0);
+    opacity: 0;
   }
-  
-  /* Social links styling */
-  .social-links {
-    display: flex;
-    justify-content: left;
-    gap: 50px;
-    font-family: 'Inter_18pt-Bold';
-    font-size: 2.5rem;
-    font-weight: bolder;
-    margin-bottom: 30px;
-    margin-left: 5%;
+  50% {
+    transform: translate3d(calc(-50% + 0px), calc(-50% + 0px), 0);
+    opacity: 1;
   }
-  
-  .social-links a {
-    text-decoration: none;
-    color: black;
+  100% {
+    transform: translate3d(calc(-50% + 0px), calc(-50% + 0px), 0);
+    opacity: 1;
   }
-  
-  .social-links .highlighted {
-    position: relative;
-    color: black;
-    /* background-color: #c9ea50; */
-    padding: 0 10px;
-    border-radius: 5px;
-  }
-  
-  /* Vimeo section with the splatter image */
-  .vimeo-wrapper {
-    position: relative;
-    display: inline-block;
-  }
-  
-  .vimeo-wrapper a {
-    position: relative;
-    z-index: 1;
-  }
-  
-  .splatter-image {
-    position: absolute;
-    top: -117px;
-    right: -120px;
-    z-index: 0;
-    width: 280%;
-    opacity: 0.7;
-  }
-  
-  /* Legal links styling */
-  .legal-links {
-    display: flex;
-    justify-content: left;
-    gap: 30px;
-    font-size: 0.9rem;
-    margin-bottom: 30px;
-    margin-left: 5%;
-  }
-  
-  .legal-links a {
-    text-decoration: none;
-    color: black;
-    font-weight: bolder;
-  }
-  
-  /* Footer logo */
-  .footer-logo img {
-    width: 150px;
-    margin-top: 20px;
-  }
+}
+/* Círculo que aparece alrededor del texto */
+.social-links a:before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 0;
+  height: 0;
+  /* background-color: #c9ea50; */
+  border-color: #c9ea50;
+  border-radius: 50%;
+  z-index: -1;
+  transform: translate(-50%, -50%);
+  transition: width 0.4s ease-in-out, height 0.4s ease-in-out;
+  /* transform: translate3d(calc(-50% + 519px), calc(-50% + 523px), 0px); */
+}
+
+.social-links a:hover:before {
+  width: 110%;
+  height: 110%;
+}
+.social-links .highlighted {
+  position: relative;
+  color: black;
+  background-color: #c9ea50;
+  padding: 0 10px;
+  border-radius: 5px;
+  transition: width 0.4s ease-in-out, height 0.4s ease-in-out;
+  transform: translate3d(calc(-50% + 519px), calc(-50% + 523px), 0px);
+}
+
+/* Vimeo section with the splatter image */
+.vimeo-wrapper {
+  position: relative;
+  display: inline-block;
+}
+
+.vimeo-wrapper a {
+  position: relative;
+  z-index: 1;
+}
+
+.splatter-image {
+  position: absolute;
+  top: -117px;
+  right: -120px;
+  z-index: 0;
+  width: 280%;
+  opacity: 0.7;
+}
+
+/* Legal links styling */
+.legal-links {
+  display: flex;
+  justify-content: left;
+  gap: 30px;
+  font-size: 0.9rem;
+  margin-bottom: 30px;
+  margin-left: 5%;
+}
+
+.legal-links a {
+  text-decoration: none;
+  color: black;
+  font-weight: bolder;
+}
+
+/* Footer logo */
+.footer-logo img {
+  width: 150px;
+  margin-top: 20px;
+}

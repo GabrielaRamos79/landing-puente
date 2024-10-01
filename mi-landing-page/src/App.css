@@ -29,6 +29,13 @@
   font-style: normal;
 }
 @font-face {
+  font-family: "Agharti-LightCondensed";
+  src: local("Agharti-LightCondensed"),
+    url("./fonts/Agharti/Agharti-LightCondensed.otf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
   font-family: "AghartiExtraCondensed";
   src: local("AghartiExtraCondensed"),
     url("./fonts/Agharti/AghartiExtraCondensed.otf") format("truetype");

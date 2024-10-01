@@ -43,7 +43,7 @@ function Header() {
                 Hacemos las cosas diferentes desde el otro lado
                 <br />
                 del branding: publicidad, branded content, diseño
-                <br />y estrategia, ¡con un
+                <br />y estrategia, ¡con un&nbsp;
                 <span className="highlight">
                   <b> punch de flow creativo</b>
                 </span>
