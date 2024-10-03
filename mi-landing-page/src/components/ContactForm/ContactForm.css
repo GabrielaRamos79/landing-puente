@@ -276,9 +276,12 @@
     .send-button {
       font-size: 2rem;
       padding: 5px 10px;
-      margin-right: -25%;
+      margin-right: 0%;
     }
   
+    .send-wrapper {
+      margin-right: 0%;
+    }
     .arrow-icon {
       top: -50%;
       right: 3%;
@@ -298,6 +301,7 @@
   
     .terms-wrapper input {
       margin-bottom: 5px;
+      margin-left: 5%;
     }
   
     .terms-wrapper label {

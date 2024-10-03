@@ -236,18 +236,27 @@
 }
 
 @media (max-width: 720px) {
+  .footer-section {
+    background-color: #e9eaf0;
+    padding: 50px 20px;
+    text-align: left;
+    /* font-family: 'Inter_18pt-Regular', sans-serif; */
+    position: relative;
+    overflow: hidden;
+    margin-top: -10%;
+  }
   .social-links {
     flex-direction: column; /* Coloca los enlaces uno debajo del otro */
     gap: 20px; /* Reduce el espacio entre ellos */
     font-size: 1.8rem; /* Reduce el tamaño del texto */
-    margin-left: 0; /* Quita el margen izquierdo */
-    text-align: center; /* Alinea el texto al centro */
+    margin-left: 10px; /* Quita el margen izquierdo */
+    text-align: left; /* Alinea el texto al centro */
   }
 
   .legal-links {
     flex-direction: column; /* Coloca los enlaces legales uno debajo del otro */
     gap: 10px; /* Reduce el espacio entre ellos */
-    text-align: center;
+    text-align: left;
   }
 
   .footer-logo img {
