@@ -263,6 +263,17 @@
 }
 
 @media (max-width: 375px) {
+  .footer-section {
+    background-color: #e9eaf0;
+    padding: 50px 20px;
+    text-align: center;
+    /* font-family: 'Inter_18pt-Regular', sans-serif; */
+    position: relative;
+    overflow: hidden;
+    margin-top: -14%;
+  }
+
+
   .social-links {
     flex-direction: column;
     gap: 15px; /* Aumenta el espacio entre los elementos para evitar que se vean demasiado juntos */
@@ -275,7 +286,7 @@
     gap: 5px;
     text-align: left;
     font-size: 0.8rem; /* Ajusta el tamaño del texto para pantallas más pequeñas */
-    margin-left: 05%;
+    margin-left: 0%;
   }
 
   .footer-logo img {
