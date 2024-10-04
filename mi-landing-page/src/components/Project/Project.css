@@ -116,3 +116,53 @@
 .close-btn:hover {
   opacity: 0.8;
 }
+
+/* Media Query para 720x1280 */
+@media (max-width: 720px) and (max-height: 1280px) {
+
+  .projects-section {
+    background-color: #e9eaf0; /* Ajusta el color de fondo de la sección si lo deseas */
+    padding: 50px 0;
+    margin-bottom: 2.5%;
+  }
+
+  /* Ajustar el tamaño de las imágenes */
+  .project-card img {
+    width: 100%; /* Ocupa el 100% del contenedor */
+    height: auto;
+  }
+
+  /* Hacer las imágenes más pequeñas para pantallas más pequeñas */
+  .project-card {
+    transform: scale(0.9); /* Reducir ligeramente el tamaño de las tarjetas */
+  }
+
+  /* Aumentar el tamaño de los textos */
+  .section-title {
+    font-size: 3rem; /* Aumentar el título de la sección */
+  }
+
+  .project-info h4 {
+    font-size: 2rem; /* Aumentar el título de los proyectos */
+  }
+
+  .project-info small {
+    font-size: 1.8rem; /* Aumentar el texto pequeño */
+  }
+
+  /* Ajustar el popup */
+  .popup-content {
+    width: 70%; /* Haz el popup más pequeño */
+    height: auto; /* Ajusta la altura automáticamente */
+    max-width: 1000px; /* Ajusta el tamaño máximo del popup */
+    max-height: 80vh; /* Limita la altura del popup al 80% de la pantalla */
+    overflow-y: scroll; /* Añade scroll si el contenido es demasiado largo */
+  }
+
+  .close-btn {
+    width: 40px;
+    height: 40px;
+    top: 5px;
+    right: 5px; /* Asegúrate de que el botón de cerrar sea accesible */
+  }
+}

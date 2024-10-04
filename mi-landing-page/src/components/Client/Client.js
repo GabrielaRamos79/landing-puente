@@ -22,21 +22,21 @@ function Client() {
               <img
                 src={LesRoches}
                 alt="Les Roches"
-                className="img-fluid client-logo"
+                className="lesroches-client img-fluid client-logo"
               />
             </div>
             <div className="col-md-2 col-sm-6 mb-4">
               <img
                 src={Luxudise}
                 alt="Luxudise"
-                className="img-fluid client-logo"
+                className="luxudise-client img-fluid client-logo"
               />
             </div>
             <div className="col-md-2 col-sm-6 mb-4">
               <img
                 src={Malaga}
                 alt="Málaga"
-                className="img-fluid client-logo"
+                className="malaga-client img-fluid client-logo"
               />
             </div>
             <div className="col-md-2 col-sm-6 mb-4">
@@ -47,7 +47,7 @@ function Client() {
               />
             </div>
             <div className="col-md-2 col-sm-6 mb-4">
-              <img src={Qipro} alt="Qipro" className="img-fluid client-logo" />
+              <img src={Qipro} alt="Qipro" className="qipro-client img-fluid client-logo" />
             </div>
           </div>
           <div className="row d-flex justify-content-around mt-5">
@@ -56,18 +56,18 @@ function Client() {
               <img
                 src={Supermex}
                 alt="Super Mex"
-                className="img-fluid client-logo"
+                className="supermex-client img-fluid client-logo"
               />
             </div>
             <div className="col-md-2 col-sm-6 mb-4">
               <img
                 src={Mediamaraton}
                 alt="Media Maraton"
-                className="img-fluid client-logo"
+                className="maraton-client img-fluid client-logo"
               />
             </div>
             <div className="col-md-2 col-sm-6 mb-4">
-              <img src={Alma} alt="Alma" className="img-fluid client-logo" />
+              <img src={Alma} alt="Alma" className="alma-client img-fluid client-logo" />
             </div>
             <div className="col-md-2 col-sm-6 mb-4">
               <img
@@ -80,7 +80,7 @@ function Client() {
               <img
                 src={Segurestil}
                 alt="Segurestil"
-                className="img-fluid client-logo"
+                className="segurestil-client img-fluid client-logo"
               />
             </div>
           </div>

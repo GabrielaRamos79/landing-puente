@@ -61,19 +61,25 @@
 @media (max-width: 720px) {
   .section-clients {
     background-color: #1c1c1c; /* Ajusta el color de fondo según tu diseño */
-    padding: 50px 0;
-    margin-bottom: -5.2%;
+    /* padding: 50px 0; */
+    margin-bottom: -19.2%;
     margin-top: -4.5%;
   }
   .client-row {
     display: grid;
-    grid-template-columns: repeat(2, 1fr); /* Crea dos columnas */
-    gap: 20px; /* Espacio entre las columnas */
+    grid-template-columns: repeat(1, 1fr) !important; /* Crea dos columnas */
+    gap: 30px !important; /* Espacio entre las columnas */
+    margin: 0px 2% !important;
   }
 
   .client-logo {
-    width: 80px; /* Ajusta el tamaño de los logos para pantallas pequeñas */
-    max-width: 100px;
+    width: 50%; /* Ajusta el tamaño de los logos para pantallas pequeñas */
+    max-width: 150px;
+    opacity: 0.8;
+    transition: opacity 0.3s ease-in-out;
+  }
+  .client-logo:hover {
+    opacity: 1;
   }
 
   /* Ajustes de botones y textos */
@@ -82,15 +88,57 @@
     gap: 20px;
   }
 
-  .quieres {
-    text-align: center;
-    font-size: 18px;
+  .quieres,
+  .btn-yes {
+    display: none;
+  }
+  
+  .lesroches-client{
+    margin-left: -28%;
   }
 
-  .grid-container .btn-yes {
-    font-size: 24px;
-    padding: 10px 20px;
-    width: 100%;
-    text-align: center;
+  .luxudise-client{
+    margin-left: 0%;
+    margin-top: 30%;
+  }
+
+  .porshe-client{
+    margin-left: 12%;
+    margin-top: 35%;
+    width: 60%;
+  }
+
+  .supermex-client{
+    margin-left: 80%;
+    margin-top: -15%;
+  }
+
+  .maraton-client{
+    margin-left: 0%;
+    margin-top: 2%;
+  }
+
+  .alarbadero-client{
+    margin-left: 25%;
+    margin-top: 0%;
+    width: 80%;
+  }
+
+  .segurestil-client{
+    margin-right: -10%;
+    margin-top: 25%;
+    width: 50%;
+  }
+
+  .malaga-client{
+    margin-top: 2%;
+  }
+
+  .qipro-client{
+    margin-top: 5%;
+  }
+
+  .alma-client{
+    margin-top: 40%;
   }
 }

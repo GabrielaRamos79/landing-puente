@@ -152,8 +152,9 @@
 }
 
 @media (max-width: 720px) and (min-height: 1280px) {
-  .services-section{
-    margin-top: -5%;
+  .al-otro-lado-section{
+    margin-top: -15%;
+    margin-bottom: -25%;
   }
   .services-section h3 {
     font-size: 8rem;
