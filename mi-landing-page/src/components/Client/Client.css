@@ -56,3 +56,35 @@
   height: auto;
   align-items: center;
 }
+
+/* Media query para pantallas de 720x1280 */
+@media (max-width: 720px) {
+  .client-row {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Crea dos columnas */
+    gap: 20px; /* Espacio entre las columnas */
+  }
+
+  .client-logo {
+    width: 80px; /* Ajusta el tamaño de los logos para pantallas pequeñas */
+    max-width: 100px;
+  }
+
+  /* Ajustes de botones y textos */
+  .grid-container {
+    grid-template-columns: 1fr; /* Cambia a una columna en pantallas pequeñas */
+    gap: 20px;
+  }
+
+  .quieres {
+    text-align: center;
+    font-size: 18px;
+  }
+
+  .grid-container .btn-yes {
+    font-size: 24px;
+    padding: 10px 20px;
+    width: 100%;
+    text-align: center;
+  }
+}

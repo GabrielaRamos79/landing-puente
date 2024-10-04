@@ -150,6 +150,145 @@
   margin-left: 10px; /* Ajusta el espacio entre el texto y la flecha */
   margin-top: 45%;
 }
+
+@media (max-width: 720px) and (min-height: 1280px) {
+  .services-section{
+    margin-top: -5%;
+  }
+  .services-section h3 {
+    font-size: 8rem;
+    margin-top: 10%;
+    margin-left: 5%;
+  }
+
+  .services-section ul {
+    margin-left: 5%;
+    font-size: 1rem;
+  }
+
+  .services-section li {
+    font-size: 10px;
+    margin-bottom: 10px;
+    font-size: 2rem;
+  }
+
+  .curvy-marca{
+    width: 120px;
+    height: 110px;
+    margin-left: 2%;
+  }
+
+  .curvy-digital, .curvy-media{
+    width: 120px;
+    height: 103px;
+    margin-left: 2%;
+  }
+
+  .curvy-branding{
+    width: 210px;
+    height: 100px;
+    margin-left: 2%;
+  }
+
+  .curvy-web{
+    width: 80px;
+    height: 100px;
+    margin-left: 2%;
+  }
+  
+  .curvy-audiovisual {
+    width: 190px;
+    height: 100px;
+    margin-left: 2%;
+  }
+
+  .second-line {
+    margin-top: -10% !important;
+    padding-top: 5% !important;
+  }
+
+  .cruzado {
+    font-size: 3rem;
+    margin-top: 5%;
+    margin-left: 3%;
+  }
+
+  .otrolado {
+    width: 305%;
+    margin-left: 5%;
+    margin-top: -100%;
+  }
+
+  .telita {
+    font-size: 4rem;
+    margin-top: 45%;
+    margin-left: -20%; 
+    transform: rotate(-5deg);
+
+  }
+
+  .flecha {
+    width: 130px;
+    margin-left: 0px;
+    margin-top: 200%;
+  }
+}
+
+/* Media queries adicionales para pantallas más pequeñas */
+@media (max-width: 576px) {
+  .services-section h3 {
+    font-size: 2.5rem;
+    margin-top: 5%;
+    margin-left: 3%;
+  }
+
+  .services-section ul {
+    margin-left: 3%;
+  }
+
+  .services-section li {
+    font-size: 8px;
+    margin-bottom: 5px;
+  }
+
+  .curvy-marca,
+  .curvy-digital,
+  .curvy-media,
+  .curvy-branding,
+  .curvy-web,
+  .curvy-audiovisual {
+    width: 40px;
+    height: 35px;
+    margin-left: 2%;
+  }
+
+  .second-line {
+    margin-top: -5% !important;
+    padding-top: 0 !important;
+  }
+
+  .cruzado {
+    font-size: 90px;
+    margin-top: 3%;
+    margin-left: 2%;
+  }
+
+  .otrolado {
+    width: 85%;
+    margin-left: 5%;
+    margin-top: 3%;
+  }
+
+  .telita {
+    font-size: 1.5rem;
+    margin-top: 5%;
+  }
+
+  .flecha {
+    width: 70px;
+    margin-top: 3%;
+  }
+}
 @media (max-width: 1224px) {
   .cruzado {
     font-size: calc(170px + 2.4vw);

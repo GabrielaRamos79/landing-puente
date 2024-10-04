@@ -121,7 +121,7 @@ function Services() {
             <div className="left-side">
               <img src={alotrolado} className="otrolado" alt="alotrolado" />
             </div>
-            <h2 className="telita">TELITAAAA</h2>
+            <h2 className="telita">TELITAAAAAAA</h2>
             <div className="right-side">
               <img src={flechaizq} className="flecha" alt="flecha" />
             </div>

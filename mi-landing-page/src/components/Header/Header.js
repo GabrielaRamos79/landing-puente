@@ -12,7 +12,7 @@ function Header() {
     <div className="container my-5">
       <header className="App-header">
         <div className="row">
-          <div>
+          <div className="vertical-container">
             <h1 className="highlight-text">
               <span className="acento-container">
                 <img src={acento} alt="Acento" className="acento-img" />S
@@ -41,16 +41,14 @@ function Header() {
             <div className="punch">
               <p>
                 Hacemos las cosas diferentes desde el otro lado
-                <br />
                 del branding: publicidad, branded content, diseño
-                <br />y estrategia, ¡con un&nbsp;
+                y estrategia, ¡con un&nbsp;
                 <span className="highlight">
                   <b> punch de flow creativo</b>
                 </span>
-                !<br /> <br />
-                Si quieres revolucionar tu marca y llevarla hasta el<br></br>
+                !
+                Si quieres revolucionar tu marca y llevarla hasta el
                 éxito, es el momento de cruzar al otro lado.
-                <br /> <br />
                 ¿Quieres saber qué podemos hacer por ti?
               </p>
             </div>
