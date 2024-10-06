@@ -1,21 +1,16 @@
-/* .hacemos {
-    width: 25%;
-    align-self: start;
-    margin-left: 5%;
-    margin-top: -15%;
-  }
-   */
 .services-section {
-  position: relative;
-  z-index: 1;
-  margin-top: 0% !important;
   background-color: #e9eaf0;
-  padding-top: 0 !important;
+  padding: 50px 0;
+  overflow: hidden; /* Asegurarse de que no se salga el contenido */
+  margin-top: -5%;
 }
 
+/* .container-services{
+  margin-left: 5%;
+} */
 .services-section h3 {
   font-family: "AghartiCondensedSemiLight", sans-serif;
-  font-size: 3.5rem;
+  font-size: 4.5rem;
   font-weight: lighter;
   margin-top: 20%;
   margin-left: 10%;
@@ -27,9 +22,6 @@
 }
 
 .services-section h3 img {
-  /*width: 100px;  Establecer un tamaño fijo para todas las imágenes */
-  /*height: 43px;  Mantener la proporción de la imagen */
-  /*margin-left: 10px;  Espacio entre el texto y la imagen */
    vertical-align: middle; /*Asegura que esté alineado correctamente con el texto*/
 }
 
@@ -41,8 +33,34 @@
 
 .services-section li {
   font-family: "Inter_18pt-SemiBold", sans-serif;
-  font-size: 12.6px;
-  margin-bottom: 3px;
+  font-size: 1rem;
+  margin-bottom: 10px;
+}
+
+/* .row-services {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  box-sizing: border-box; /* Asegura que el padding no expanda el ancho 
+} */
+
+.row-services {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 columnas con el mismo ancho */
+  gap: 30px; /* Ajuste el espacio entre columnas */
+  margin: 0 5%; /* Ajustar márgenes laterales */
+}
+
+.col-md-4 {
+  display: flex;
+  flex-direction: column; /* 3 columnas con 30% de ancho cada una */
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.second-line {
+  margin-top: 20px !important; /* Reduce este valor para acercar las filas */
+  padding-top: 0 !important;
 }
 
 .curvy {
@@ -51,58 +69,56 @@
 }
 
 .curvy-marca {
-  width: 65px;
-  height: 45px;
+  width: 70px;
+  height: 60px;
   margin-left:1.2%;
 }
 
 .curvy-digital {
-  width: 60px;
-  height: 45px;
+  width: 70px;
+  height: 60px;
   margin-left:1.2%;
 }
 
 .curvy-media {
-  width: 45px;
-  height: 45px;
+  width: 70px;
+  height: 60px;
   margin-left:1.2%;
 }
 
-.second-line {
-  margin-top: -30% !important; /* Reduce este valor para acercar las filas */
-  padding-top: 0 !important;
-}
+
 
 .curvy-branding {
-  width: 70px;
-  height: 45px;
+  width: 120px;
+  height: 60px;
   margin-left:0%;
   margin-top: 3.2%;
   margin-bottom: 3%;
 }
 
 .curvy-web {
-  width: 30px;
-  height: 45px;
+  width: 50px;
+  height: 58px;
   margin-left:1.2%;
 }
 
 .curvy-audiovisual {
-  width: 90px;
-  height: 45px;
+  width: 120px;
+  height: 60px;
   margin-left:1.2%;
 }
 
 .cruzado {
   font-family: "AghartiCondensedSemiLight", sans-serif;
-  font-size: 220px;
-  margin-top: 10%;
-  margin-left: 5.2%;
+  font-size: 234px;
+  margin-top: 7%;
+  margin-left: 29%;
 }
 
 .al-otro-lado-section {
-  padding: 20px;
+  padding-bottom: 20px 5%;
   margin-bottom: -4%;
+  /* margin-left: 29%; */
 }
 
 .content-container {
@@ -111,10 +127,10 @@
   align-items: center;
 }
 
-.left-side {
+ .left-side {
   flex: 2;
-  /* margin-left: 5%; */
-}
+  margin-left: 0;
+} 
 
 .right-side {
   flex: 1;
@@ -125,9 +141,9 @@
 }
 
 .otrolado {
-  width: 88%;
-  max-width: 500px; /* Ajusta el tamaño de la imagen */
-  margin-left: 10%;
+  width: 100%;
+  /* max-width: 500px;  */
+  margin-left: 68%;
 }
 
 /* .otrolado {
@@ -139,7 +155,7 @@
   font-family: "Hurtmore", sans-serif;
   font-size: 2rem;
   transform: rotate(-10deg);
-  margin-left: 5%;
+  margin-left:25%;
   margin-top: 11%;
   color: #061599;
 }
@@ -152,10 +168,20 @@
 }
 
 @media (max-width: 720px) and (min-height: 1280px) {
-  .al-otro-lado-section{
-    margin-top: -15%;
-    margin-bottom: -25%;
+  .row-services{
+    margin-top: -10%;
   }
+
+  .container-services{
+    display: grid;
+    gap: 1rem;
+    grid-auto-columns: 22rem;
+    grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
+  }
+  /* .al-otro-lado-section{
+    margin-top: -15%;
+    margin-bottom: -10%;
+  } */
   .services-section h3 {
     font-size: 8rem;
     margin-top: 10%;
@@ -168,9 +194,18 @@
   }
 
   .services-section li {
-    font-size: 10px;
+    font-size: 5rem;
     margin-bottom: 10px;
-    font-size: 2rem;
+    /* font-size: 2rem; */
+  }
+
+  .curvy-marca,
+  .curvy-digital,
+  .curvy-media,
+  .curvy-branding,
+  .curvy-web,
+  .curvy-audiovisual {
+    max-width: 80px;
   }
 
   .curvy-marca{
@@ -209,34 +244,44 @@
   }
 
   .cruzado {
-    font-size: 3rem;
+    font-size: 90px;
     margin-top: 5%;
-    margin-left: 3%;
+    margin-left: 10%;
   }
 
   .otrolado {
-    width: 305%;
-    margin-left: 5%;
-    margin-top: -100%;
+    width: 100%;
+    margin-left: 0%;
+    margin-top: -10%;
   }
 
   .telita {
-    font-size: 4rem;
-    margin-top: 45%;
-    margin-left: -20%; 
+    font-size: 1.5rem;
+    margin-top: 5%;
+    /* margin-left: -20%;  */
     transform: rotate(-5deg);
 
   }
 
   .flecha {
-    width: 130px;
-    margin-left: 0px;
-    margin-top: 200%;
+    width: 80px;
+    /* margin-left: 0px; */
+    margin-top: 5%;
   }
 }
 
 /* Media queries adicionales para pantallas más pequeñas */
 @media (max-width: 576px) {
+  .row-services {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .col-md-4 {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
   .services-section h3 {
     font-size: 2.5rem;
     margin-top: 5%;
@@ -290,26 +335,26 @@
     margin-top: 3%;
   }
 }
-@media (max-width: 1224px) {
+/* @media (max-width: 1224px) {
   .cruzado {
     font-size: calc(170px + 2.4vw);
   }
-}
+} */
 
-@media (max-width: 992px) {
+/* @media (max-width: 992px) {
   .cruzado {
     font-size: 140px;
   }
-}
+} */
 
-@media (max-width: 768px) {
+/* @media (max-width: 768px) {
   .cruzado {
     font-size: 100px;
   }
-}
+} */
 
-@media (max-width: 576px) {
+/* @media (max-width: 576px) {
   .cruzado {
     font-size: 70px;
   }
-}
+} */

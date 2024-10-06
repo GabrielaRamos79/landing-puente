@@ -15,12 +15,12 @@ function Services() {
     <div className="container my-5">
       <section className="services-section mt-5">
         {/* <img src={hacemos} className="hacemos" alt="que-hacemos" /> */}
-        <div className="container">
+        <div className="container-services">
           <div className="row">
             {/* Primera fila */}
             <div className="col-md-4">
               <h3>
-                ESTRATEGIA DE{" "}
+                ESTRATEGIADE{" "}
                 <img src={marca} className="curvy curvy-marca" alt="marca" />
               </h3>
               <ul>
@@ -64,7 +64,7 @@ function Services() {
             </div>
           </div>
 
-          <div className="row mt-5 second-line">
+          <div className="row-services second-line">
             {/* Segunda fila */}
             <div className="col-md-4">
               <h3>
@@ -115,7 +115,7 @@ function Services() {
             </div>
           </div>
         </div>
-        <div className="col-md-9 al-otro-lado-section">
+        <div className="container al-otro-lado-section">
           <h1 className="cruzado">MIRA QUIEN HA CRUZADO YA</h1>
           <div className="content-container">
             <div className="left-side">

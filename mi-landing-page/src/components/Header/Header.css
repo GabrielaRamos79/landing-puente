@@ -66,9 +66,9 @@ img.puente-logo {
 
 .punch p {
   font-family: "Inter_18-Medium", sans-serif;
-  font-size: 1rem;
+  font-size: 1.2rem;
   text-align: left;
-  margin-left: 5%;
+  margin-left: 8%;
   margin-top: 0%;
   width: 65%; /* Ajuste del ancho para evitar que el botón afecte el flujo del texto */
 }
@@ -76,26 +76,27 @@ img.puente-logo {
 .App-link {
   background-color: #c9ea50;
   color: #161719;
-  font-family: 'AghartiVF', sans-serif;
-  font-size: 30px;
+  font-family: 'Agharti-lightcondensed', sans-serif;
+  font-size: 60px;
   font-weight: lighter;
   box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
   text-decoration: none;
   text-align: center;
-  padding: 0px 10px;
+  padding: 0px 15px;
   margin-right: 0%;
   margin-left: 21%;
-  margin-top: -30%; /* Mueve el botón hacia arriba */
+  margin-top: 0%; /* Mueve el botón hacia arriba */
   height: fit-content;
-  letter-spacing: -0.5px;
-  transform: scaleY(1.2);
+  letter-spacing: 0.5px;
+  transform: scaleY(0.8);
 }
 
 .yeah {
-  width: 100%;
+  width: 127%;
+  max-width: 250%;
   /* align-self: flex-end; */
-  /* margin-left: 40%; */
-  margin-top: 8%;
+  margin-left: -10%;
+  margin-top: 25%;
   margin-bottom:0%;
 }
 
@@ -120,7 +121,7 @@ img.puente-logo {
 
 .left-column {
   text-align: left;
-  margin-top: 38%;
+  margin-top: 56%;
   margin-left: 7%; /* Ajusta la posición de la imagen del texto */
 }
 
@@ -130,7 +131,7 @@ img.puente-logo {
 }
 
 .hacemos {
-  width: 50%; /* Ajusta el tamaño de la imagen "QUE HACEMOS" */
+  width: 70%; /* Ajusta el tamaño de la imagen "QUE HACEMOS" */
   max-width: 400px; /* Ajusta según lo que necesites */
 }
 
@@ -155,10 +156,10 @@ img.puente-logo {
     max-width: 250px;
   }
 
-  .App-link {
+  /* .App-link {
     font-size: 30px;
     margin-top: -30%; 
-  }
+  } */
 }
 
 /* Para pantallas medianas como laptops */
@@ -273,23 +274,23 @@ img.puente-logo {
     padding: 0 40px 0 40px;
     font-family: 'Agharti-LightCondensed', sans-serif;
   }
-  /* .App-link {
+  .App-link {
     background-color: #c9ea50;
     color: #161719;
-    font-family: 'AghartiVF', sans-serif;
-    font-size: 30px;
-    font-weight: lighter;
+    font-family: 'Agharti-LightCondensed', sans-serif;
+    font-size: 50px;
+    /* font-weight: lighter; */
     box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
     text-decoration: none;
     text-align: center;
-    padding: 0px 10px;
+    /* padding: 0px 10px; */
     margin-right: 0%;
     margin-left: 21%;
-    margin-top: -30%; 
+    margin-top: 0%; 
     height: fit-content;
     letter-spacing: -0.5px;
     transform: scaleY(1.2);
-  } */
+  }
 
   .punch p {
     font-family: "Inter_18-Medium", sans-serif;
@@ -333,8 +334,128 @@ img.puente-logo {
   }
 
   img.yeah{
-    margin-left: -20%;
+    /* margin-left: -20%; */
     overflow: hidden;
+    width: 90%;
+  }
+}
+
+
+
+@media (max-width: 390px) {
+  .fw-bold {
+    font-size: 2rem; /* Ajuste de tamaño de la fuente */
+    margin-right: 120px; 
+    text-align: right;
+    margin-top: 15%;
+  }
+  .highlight-text {
+      font-family: "Inter_18pt-Light", sans-serif;
+      font-size: 2rem; /* Ajusta el tamaño de la fuente */
+      text-align: left; /* Centra el texto */
+      margin: 40px 170px 0 0; /* Elimina los márgenes */
+      padding: 0 !important;
+  }
+
+  .acento-img {
+    position: absolute;
+    top: -20px; /* Ajusta la posición */
+    left: -10px;
+    transform: translateX(-50%); /* Centra horizontalmente */
+    width: 30px; /* Tamaño ajustado */
+  }
+  .App-link {
+    font-size: 3.2rem; /* Ajusta el tamaño de fuente */
+    padding: 0px 20px; /* Ajusta el padding */
+    margin-right: 40%;
+    font-family: 'Agharti-LightCondensed', sans-serif;
+  }
+
+  img.puente-logo {
+    height: 60px; /* Ajusta el tamaño del logo */
+    margin-left: 15%;
+    margin-top: 15px;
+  }
+
+  .spin-logo {
+    width: 100%;
+    max-width: 150px; /* Ajusta el tamaño máximo */
+    margin-right: 100%; /* Centra el logo */
+    margin-top: 10%;
+    display: block;
+  }
+
+  .punch p{
+    font-size: 1.4rem;
+    text-align: left;
+  }
+
+  .header-grid {
+    grid-template-columns: 1fr; /* Cambiar a una columna */
+    grid-template-rows: auto auto; /* Dos filas automáticas */
+  }
+
+  .left-column {
+    order: 2; /* Mueve "Qué hacemos" abajo */
+    text-align: center; /* Ajusta para centrar en pantallas pequeñas */
+    margin: 20px 0; /* Ajusta márgenes si es necesario */
+  }
+
+  .right-column {
+    order: 1; /* Mueve "Oh Yeah" arriba */
+    text-align: center; /* Centra la imagen "Oh Yeah" */
+    margin: 0 20px; /* Ajusta márgenes si es necesario */
+  }
+  .hacemos {
+    width: 80%; /* Reduce el tamaño de la imagen */
+  }
+
+}
+@media (max-width: 360px) {
+  .highlight-text {
+    font-size: 2rem; /* Ajusta el tamaño de fuente */
+  }
+
+  .App-link {
+    font-size: 1rem; /* Ajusta el tamaño de fuente */
+    padding: 6px 10px; /* Ajusta el padding */
+  }
+
+  .puente-logo {
+    height: 35px; /* Ajusta el tamaño del logo */
+  }
+
+  .hacemos {
+    width: 75%; /* Reduce el tamaño de la imagen */
+  }
+
+  .fw-bold {
+    font-size: 1rem; /* Ajusta el tamaño de fuente */
+    margin-top: 5px;
+  }
+}
+
+@media (max-width: 320px) {
+  .highlight-text {
+    font-size: 1.8rem; /* Ajusta el tamaño de fuente */
+  }
+
+  .App-link {
+    font-size: 0.9rem; /* Ajusta el tamaño de fuente */
+    padding: 5px 8px; /* Ajusta el padding */
+  }
+
+  .puente-logo {
+    height: 30px; /* Ajusta el tamaño del logo */
+  }
+
+  .hacemos {
+    width: 70%; /* Reduce el tamaño de la imagen */
+  }
+
+  .fw-bold {
+    font-size: 0.9rem; /* Ajusta el tamaño de fuente */
+    margin-top: 5px;
   }
 }
 
